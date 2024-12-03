@@ -82,24 +82,41 @@ footer {
   width: 100%;
 }
 
-// FOR ALL PAGES
+// FOR ALL PAGES -----------------
+h1.title{
+  text-transform: uppercase;
+}
 h2{
   margin: 1em 0;
 }
-
-// END FOR ALL PAGES
-
-//PAGE : ACCUEIL
 .bold {
   font-weight: bold;
+}
+// END FOR ALL PAGES
+
+//PAGE : ACCUEIL -----------------
+.accueil-color_green{
+  color: $vert_foncee;
 }
 #frugacite-accronym, #frugacite-definition{
   cursor: default;
 }
-#frugacite-definition{
-  color: $vert_foncee;
+#frugacite-accronym{
+  margin: 0 1px;
+  span{
+    margin: 0 -1px;
+    &:hover{
+      text-decoration: underline;
+      text-underline-offset: 0.25rem;
+    }
+  }
 }
-
+#frugacite-definition{
+  span:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+  }
+}
 //END PAGE : ACCUEIL
 
 

@@ -58,6 +58,10 @@ footer {
   width: 100%;
 }
 
+h1.title {
+  text-transform: uppercase;
+}
+
 h2 {
   margin: 1em 0;
 }
@@ -66,12 +70,28 @@ h2 {
   font-weight: bold;
 }
 
+.accueil-color_green {
+  color: #5A7C6E;
+}
+
 #frugacite-accronym, #frugacite-definition {
   cursor: default;
 }
 
-#frugacite-definition {
-  color: #5A7C6E;
+#frugacite-accronym {
+  margin: 0 1px;
+}
+#frugacite-accronym span {
+  margin: 0 -1px;
+}
+#frugacite-accronym span:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+#frugacite-definition span:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
 }
 
 @media (max-width: 990px) {
