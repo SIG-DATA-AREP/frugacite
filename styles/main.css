@@ -54,9 +54,24 @@ nav ul ul.dropdown-menu.show {
 }
 
 footer {
-  position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+h2 {
+  margin: 1em 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#frugacite-accronym, #frugacite-definition {
+  cursor: default;
+}
+
+#frugacite-definition {
+  color: #5A7C6E;
 }
 
 @media (max-width: 990px) {

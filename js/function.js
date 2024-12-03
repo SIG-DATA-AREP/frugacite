@@ -12,3 +12,28 @@ function load_page(page) {
     }
   );
 }
+
+function bindHoverEffects(selector1, selector2) {
+  var spans1 = $(selector1);
+  var spans2 = $(selector2);
+
+  function bindHover(spansA, spansB) {
+    spansA.hover(
+      function () {
+        var index = spansA.index(this);
+        if (spansB.eq(index).length) {
+          spansB.eq(index).addClass("bold");
+        }
+      },
+      function () {
+        var index = spansA.index(this);
+        if (spansB.eq(index).length) {
+          spansB.eq(index).removeClass("bold");
+        }
+      }
+    );
+  }
+
+  bindHover(spans1, spans2);
+  bindHover(spans2, spans1);
+}
