@@ -16,7 +16,7 @@ header {
 }
 
 img.logo {
-  height: 3rem;
+  height: 5rem;
 }
 
 nav ul {
@@ -56,6 +56,19 @@ nav ul ul.dropdown-menu.show {
 footer {
   bottom: 0;
   width: 100%;
+}
+footer section {
+  margin-bottom: 3rem;
+}
+footer section img {
+  width: 8rem !important;
+}
+footer section a {
+  text-decoration: none;
+  color: #ccc;
+}
+footer section img.partner {
+  width: 8rem !important;
 }
 
 h1.title {
@@ -104,7 +117,7 @@ img {
 
 @media (max-width: 990px) {
   nav {
-    margin-top: -2rem;
+    margin-top: -4rem;
   }
   nav div.container, nav li {
     border: none !important;

@@ -1,6 +1,7 @@
 //COLORS
 $white: #ffffff;
 $black: #000000;
+$grey: #ccc;
 $rouge: #D71B1B;
 $jaune: #FDF392;
 $bleu_foncee: #1B515D;
@@ -11,9 +12,10 @@ $couleur_logo: #4db1a8;
 //MESURES
 
 $dropdownMmenu-marginTop: 1rem;
-$logo-height: 3rem;
+$header-logo_height: 5rem;
+$footer-logo_width: 8rem;
 $mobile-dropdownMmenu-marginTop: -0.5rem;
-$mobile-nav-marginTop: calc(-1 *($logo-height - 1rem ));
+$mobile-nav-marginTop: calc(-1 *($header-logo_height - 1rem ));
 
 
 
@@ -35,7 +37,7 @@ header {
 }
 
 img.logo {
-    height: $logo-height;
+    height: $header-logo_height;
 }
 
 nav {
@@ -80,6 +82,23 @@ footer {
   // position: fixed;
   bottom: 0;
   width: 100%;
+
+  section{
+    margin-bottom: 3rem;
+    
+    img{
+      width: $footer-logo_width !important;
+    }
+  
+    a{
+      text-decoration: none;
+      color: $grey;
+    }
+  
+    img.partner{
+      width: $footer-logo_width !important;
+    }
+  }
 }
 
 // FOR ALL PAGES -----------------
