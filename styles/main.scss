@@ -13,7 +13,7 @@ $couleur_logo: #4db1a8;
 
 $dropdownMmenu-marginTop: 1rem;
 $header-logo_height: 5rem;
-$footer-logo_width: 8rem;
+$footer-logo_width: 5rem;
 $mobile-dropdownMmenu-marginTop: -0.5rem;
 $mobile-nav-marginTop: calc(-1 *($header-logo_height - 1rem ));
 
@@ -34,11 +34,12 @@ header {
   background: $white;
   color: $black;
   padding: 0;
+
+  img.logo {
+    height: $header-logo_height;
+  }
 }
 
-img.logo {
-    height: $header-logo_height;
-}
 
 nav {
   ul {
@@ -96,7 +97,7 @@ footer {
     }
   
     img.partner{
-      width: $footer-logo_width !important;
+      // height: $footer-logo_width !important;
     }
   }
 }
@@ -115,36 +116,35 @@ p, li{
   font-weight: bold;
 }
 
-img{
-  max-width: 100%;
-}
-
-// END FOR ALL PAGES
-
 //PAGE : ACCUEIL -----------------
-.accueil-color_green{
-  color: $vert_foncee;
-}
-#frugacite-accronym, #frugacite-definition{
-  cursor: default;
-}
-#frugacite-accronym{
-  margin: 0 1px;
-  span{
-    margin: 0 -1px;
-    &:hover{
+div#page_accueil{
+  img{
+    max-width: 100%;
+  }
+  .accueil-color_green{
+    color: $vert_foncee;
+  }
+  #frugacite-accronym, #frugacite-definition{
+    cursor: default;
+  }
+  #frugacite-accronym{
+    margin: 0 1px;
+    span{
+      margin: 0 -1px;
+      &:hover{
+        text-decoration: underline;
+        text-underline-offset: 0.25rem;
+      }
+    }
+  }
+  #frugacite-definition{
+    span:hover{
       text-decoration: underline;
       text-underline-offset: 0.25rem;
     }
   }
 }
-#frugacite-definition{
-  span:hover{
-    text-decoration: underline;
-    text-underline-offset: 0.25rem;
-  }
-}
-//END PAGE : ACCUEIL
+
 
 
 @media (max-width: 990px) {
