@@ -12,7 +12,7 @@ $couleur_logo: #4db1a8;
 //MESURES
 
 $dropdownMmenu-marginTop: 1rem;
-$logo_height: 5rem;
+$logo_height: 6rem;
 $mobile-dropdownMmenu-marginTop: -0.5rem;
 $mobile-nav-marginTop: calc(-1 *($logo_height - 1rem ));
 
@@ -140,10 +140,19 @@ footer {
       height: calc($logo_height - 2rem);
     }
   
-    img.partner{
+    .partner{
       height: $logo_height;
       width: auto;
 
+    }
+    .image-container {
+      width: $logo_height;
+      height: $logo_height;
+      background-color: #4db1a8;
+      -webkit-mask: url('/images/footer/Ladyss-logo-white.webp') no-repeat center;
+      -webkit-mask-size: contain;
+      mask: url('/images/footer/Ladyss-logo-white.webp') no-repeat center;
+      mask-size: contain;
     }
   }
 }

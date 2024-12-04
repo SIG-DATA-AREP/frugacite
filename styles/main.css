@@ -15,7 +15,7 @@ header {
   padding: 0;
 }
 header img.logo {
-  height: 5rem;
+  height: 6rem;
 }
 
 nav ul {
@@ -105,16 +105,26 @@ footer section a {
   color: #ccc;
 }
 footer section img.logo {
-  height: 3rem;
+  height: 4rem;
 }
-footer section img.partner {
-  height: 5rem;
+footer section .partner {
+  height: 6rem;
   width: auto;
+}
+footer section .image-container {
+  width: 6rem;
+  height: 6rem;
+  background-color: #4db1a8;
+  -webkit-mask: url("/images/footer/Ladyss-logo-white.webp") no-repeat center;
+  -webkit-mask-size: contain;
+  -webkit-mask: url("/images/footer/Ladyss-logo-white.webp") no-repeat center;
+          mask: url("/images/footer/Ladyss-logo-white.webp") no-repeat center;
+  mask-size: contain;
 }
 
 @media (max-width: 990px) {
   nav {
-    margin-top: -4rem;
+    margin-top: -5rem;
   }
   nav div.container, nav li {
     border: none !important;
