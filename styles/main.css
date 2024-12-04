@@ -52,20 +52,6 @@ nav ul ul.dropdown-menu.show {
   padding: 20px;
 }
 
-footer {
-  bottom: 0;
-  width: 100%;
-}
-footer section {
-  margin-bottom: 3rem;
-}
-footer section img {
-  width: 5rem !important;
-}
-footer section a {
-  text-decoration: none;
-  color: #ccc;
-}
 h1.title {
   text-transform: uppercase;
 }
@@ -104,6 +90,25 @@ div#page_accueil #frugacite-accronym span:hover {
 div#page_accueil #frugacite-definition span:hover {
   text-decoration: underline;
   text-underline-offset: 0.25rem;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+}
+footer section {
+  margin-bottom: 3rem;
+}
+footer section a {
+  text-decoration: none;
+  color: #ccc;
+}
+footer section img.logo {
+  height: 3rem;
+}
+footer section img.partner {
+  height: 5rem;
+  width: auto;
 }
 
 @media (max-width: 990px) {

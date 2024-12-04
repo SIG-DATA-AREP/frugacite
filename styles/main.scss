@@ -12,10 +12,9 @@ $couleur_logo: #4db1a8;
 //MESURES
 
 $dropdownMmenu-marginTop: 1rem;
-$header-logo_height: 5rem;
-$footer-logo_width: 5rem;
+$logo_height: 5rem;
 $mobile-dropdownMmenu-marginTop: -0.5rem;
-$mobile-nav-marginTop: calc(-1 *($header-logo_height - 1rem ));
+$mobile-nav-marginTop: calc(-1 *($logo_height - 1rem ));
 
 
 
@@ -36,7 +35,7 @@ header {
   padding: 0;
 
   img.logo {
-    height: $header-logo_height;
+    height: $logo_height;
   }
 }
 
@@ -77,29 +76,6 @@ nav {
 
 #main-content {
   padding: 20px;
-}
-
-footer {
-  // position: fixed;
-  bottom: 0;
-  width: 100%;
-
-  section{
-    margin-bottom: 3rem;
-    
-    img{
-      width: $footer-logo_width !important;
-    }
-  
-    a{
-      text-decoration: none;
-      color: $grey;
-    }
-  
-    img.partner{
-      // height: $footer-logo_width !important;
-    }
-  }
 }
 
 // FOR ALL PAGES -----------------
@@ -145,7 +121,31 @@ div#page_accueil{
   }
 }
 
+// FOOTER -----------------
+footer {
+  // position: fixed;
+  bottom: 0;
+  width: 100%;
 
+  section{
+    margin-bottom: 3rem;
+    
+    a{
+      text-decoration: none;
+      color: $grey;
+    }
+    
+    img.logo{
+      height: calc($logo_height - 2rem);
+    }
+  
+    img.partner{
+      height: $logo_height;
+      width: auto;
+
+    }
+  }
+}
 
 @media (max-width: 990px) {
     nav {
