@@ -50,6 +50,7 @@ nav ul ul.dropdown-menu.show {
 
 #main-content {
   padding: 20px;
+  min-height: 450px;
 }
 
 h1.title {
