@@ -149,9 +149,9 @@ footer {
       width: $logo_height;
       height: $logo_height;
       background-color: #4db1a8;
-      -webkit-mask: url('/images/footer/Ladyss-logo-white.webp') no-repeat center;
+      -webkit-mask: url('../images/footer/Ladyss-logo-white.webp') no-repeat center;
       -webkit-mask-size: contain;
-      mask: url('/images/footer/Ladyss-logo-white.webp') no-repeat center;
+      mask: url('../images/footer/Ladyss-logo-white.webp') no-repeat center;
       mask-size: contain;
     }
   }
