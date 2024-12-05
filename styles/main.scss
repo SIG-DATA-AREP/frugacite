@@ -122,6 +122,38 @@ div#page_accueil{
   }
 }
 
+//PAGE : CONTACT -----------------
+div#page_contact{
+  form{
+    font-family: Lato, Arial, sans-serif;
+    padding: 2rem 0;
+    label{
+      margin-top: 1.5rem;
+      font-size: 1.5em;
+    }
+    input, textarea{
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      border-bottom: 1px solid $black;
+      &:hover{
+        border-bottom: 1px solid $couleur_logo;
+      }
+    }
+
+    button[type="submit"]{
+      margin-top: 2rem;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      border-bottom: 1px solid $black;
+      &:hover{
+        border-bottom: 1px solid $couleur_logo;
+      }
+    }
+  }
+}
+
 // FOOTER -----------------
 footer {
   // position: fixed;
