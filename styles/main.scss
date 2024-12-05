@@ -1,7 +1,7 @@
 /*AREP DESIGN VARIBLES*/
 
 //TYPOGRAPHY
-$arep-font-family: "lato regular";
+$arep-font-family: "lato regular", sans-serif;
 $text-font-size: 23px;
 
 //COLORS
@@ -31,7 +31,8 @@ $light_opacity: 20%;
 //TITLE FONT
 h1{
   font-family: $arep-font-family;
-  font-size: 99px;
+  // font-size: 99px; // To much big ?
+  font-size: 50px;
   text-transform: uppercase;
 }
 h2{
@@ -52,7 +53,8 @@ $couleur_logo: #4db1a8;
 //MESURES
 
 $dropdownMmenu-marginTop: 1rem;
-$logo_height: 6rem;
+$logo_height: 4rem;
+$logo_partener_height: 3rem;
 $mobile-dropdownMmenu-marginTop: -0.5rem;
 $mobile-nav-marginTop: calc(-1 *($logo_height - 1rem ));
 
@@ -121,19 +123,25 @@ nav {
 }
 
 // FOR ALL PAGES -----------------
-h1.title{
+.title{
   text-transform: uppercase;
-  font-weight: 700;
+  // font-weight: 700;
 }
+
 h1,h2,h3,h4{
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
+
+h2,h3{
+  margin-top: 2rem;
+}
+
 .bold {
   font-weight: bold;
 }
+
 .accueil-color_green{
-  color: $dark_green;
+  color: $dark_blue;
 }
 
 a.text-link{
@@ -187,6 +195,7 @@ div#page_contact{
   form{
     padding: 2rem 0;
     label{
+      font-size: 1.125rem;
       margin-top: 1.5rem;
     }
     input, textarea{
@@ -194,9 +203,6 @@ div#page_contact{
       border-radius: 0;
       padding: 0;
       border-bottom: 1px solid $dark_grey;
-      &:hover{
-        border-bottom: 1px solid $couleur_logo;
-      }
     }
 
     button[type="submit"]{
@@ -205,9 +211,6 @@ div#page_contact{
       border-radius: 0;
       padding: 0;
       border-bottom: 1px solid $dark_grey;
-      &:hover{
-        border-bottom: 1px solid $couleur_logo;
-      }
     }
   }
 }
@@ -220,26 +223,55 @@ footer {
   width: 100%;
 
   section{
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    &:nth-child(1),&:nth-child(2){
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 0;
+    }
     
     a{
       text-decoration: none;
-      color: $dark_grey;
+      color: $grey;
+      font-size: 0.8rem;
     }
     
     img.logo{
-      height: calc($logo_height - 2rem);
+      height: calc($logo_height);
     }
   
     .partner{
-      height: $logo_height;
+      height: $logo_partener_height;
       width: auto;
 
     }
-    .image-container {
+
+    .image-empty-container{
       width: $logo_height;
       height: $logo_height;
-      background-color: #4db1a8;
+    }
+
+    .cm{
+      height: calc($logo_partener_height - 1.5rem) !important;
+      margin-top: 1rem;
+    }
+    .thema{
+      height: calc($logo_partener_height - 1.5rem) !important;
+      margin-top: 1rem;
+    }
+    .univ{
+      height: calc($logo_partener_height - 1.5rem) !important;
+      margin-top: 1rem;
+    }
+    .sorbonne{
+      height: calc($logo_partener_height - 1.5rem) !important;
+      margin-top: 1rem;
+    }
+
+    .image-container {
+      width: calc($logo_partener_height - 0.5rem);
+      height: calc($logo_partener_height - 0.5rem);
+      background-color: $couleur_logo;
       -webkit-mask: url('../images/footer/Ladyss-logo-white.webp') no-repeat center;
       -webkit-mask-size: contain;
       mask: url('../images/footer/Ladyss-logo-white.webp') no-repeat center;

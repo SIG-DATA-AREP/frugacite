@@ -1,28 +1,28 @@
 /*AREP DESIGN VARIBLES*/
 h1 {
-  font-family: "lato regular";
-  font-size: 99px;
+  font-family: "lato regular", sans-serif;
+  font-size: 50px;
   text-transform: uppercase;
 }
 
 h2 {
-  font-family: "lato regular";
+  font-family: "lato regular", sans-serif;
   font-size: 39px;
 }
 
 h3 {
-  font-family: "lato regular";
+  font-family: "lato regular", sans-serif;
   font-size: 35px;
 }
 
 /*PROJECT VARIBLES*/
 html {
-  font-family: "lato regular";
+  font-family: "lato regular", sans-serif;
   font-size: 23px;
 }
 
 body {
-  font-family: "lato regular";
+  font-family: "lato regular", sans-serif;
   font-size: 23px;
   margin: 0;
   padding: 0;
@@ -35,7 +35,7 @@ header {
   padding: 0;
 }
 header img.logo {
-  height: 6rem;
+  height: 4rem;
 }
 
 nav ul {
@@ -72,14 +72,16 @@ nav ul ul.dropdown-menu.show {
   min-height: 450px;
 }
 
-h1.title {
+.title {
   text-transform: uppercase;
-  font-weight: 700;
 }
 
 h1, h2, h3, h4 {
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h2, h3 {
+  margin-top: 2rem;
 }
 
 .bold {
@@ -87,7 +89,7 @@ h1, h2, h3, h4 {
 }
 
 .accueil-color_green {
-  color: #5a7c6e;
+  color: #1a515d;
 }
 
 a.text-link {
@@ -126,6 +128,7 @@ div#page_contact form {
   padding: 2rem 0;
 }
 div#page_contact form label {
+  font-size: 1.125rem;
   margin-top: 1.5rem;
 }
 div#page_contact form input, div#page_contact form textarea {
@@ -134,9 +137,6 @@ div#page_contact form input, div#page_contact form textarea {
   padding: 0;
   border-bottom: 1px solid #212121;
 }
-div#page_contact form input:hover, div#page_contact form textarea:hover {
-  border-bottom: 1px solid #4db1a8;
-}
 div#page_contact form button[type=submit] {
   margin-top: 2rem;
   border: none;
@@ -144,31 +144,54 @@ div#page_contact form button[type=submit] {
   padding: 0;
   border-bottom: 1px solid #212121;
 }
-div#page_contact form button[type=submit]:hover {
-  border-bottom: 1px solid #4db1a8;
-}
 
 footer {
   bottom: 0;
   width: 100%;
 }
 footer section {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+}
+footer section:nth-child(1), footer section:nth-child(2) {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 footer section a {
   text-decoration: none;
-  color: #212121;
+  color: #9d9d9c;
+  font-size: 0.8rem;
 }
 footer section img.logo {
   height: 4rem;
 }
 footer section .partner {
-  height: 6rem;
+  height: 3rem;
   width: auto;
 }
+footer section .image-empty-container {
+  width: 4rem;
+  height: 4rem;
+}
+footer section .cm {
+  height: 1.5rem !important;
+  margin-top: 1rem;
+}
+footer section .thema {
+  height: 1.5rem !important;
+  margin-top: 1rem;
+}
+footer section .univ {
+  height: 1.5rem !important;
+  margin-top: 1rem;
+}
+footer section .sorbonne {
+  height: 1.5rem !important;
+  margin-top: 1rem;
+}
 footer section .image-container {
-  width: 6rem;
-  height: 6rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background-color: #4db1a8;
   -webkit-mask: url("../images/footer/Ladyss-logo-white.webp") no-repeat center;
   -webkit-mask-size: contain;
@@ -179,7 +202,7 @@ footer section .image-container {
 
 @media (max-width: 990px) {
   nav {
-    margin-top: -5rem;
+    margin-top: -3rem;
   }
   nav div.container, nav li {
     border: none !important;
