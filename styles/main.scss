@@ -87,8 +87,9 @@ h1.title{
   text-transform: uppercase;
   font-weight: 700;
 }
-h2{
-  margin: 1em 0;
+h1,h2,h3,h4{
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
 }
 p, li{
   font-size: 1.5rem;
@@ -98,6 +99,13 @@ p, li{
 }
 .accueil-color_green{
   color: $vert_foncee;
+}
+
+a.text-link{
+  color: $black;
+  &:hover{
+    font-weight: bold;
+  }
 }
 
 //PAGE : ACCUEIL -----------------
@@ -130,9 +138,14 @@ div#page_accueil{
 //PAGE : THESE -----------------
 div#page_these{
   font-family: $font-family;
-  h3{
-    font-weight: 500;
-    margin: 1.5rem  0;
+}
+
+//PAGE : THESE -----------------
+div#page_publication_donnees{
+  font-family: $font-family;
+  h1,h2,h3{
+    margin-top: 2rem !important;
+
   }
 }
 
