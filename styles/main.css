@@ -55,6 +55,7 @@ nav ul ul.dropdown-menu.show {
 
 h1.title {
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 h2 {
@@ -69,11 +70,12 @@ p, li {
   font-weight: bold;
 }
 
+.accueil-color_green {
+  color: #5A7C6E;
+}
+
 div#page_accueil img {
   max-width: 100%;
-}
-div#page_accueil .accueil-color_green {
-  color: #5A7C6E;
 }
 div#page_accueil #frugacite-accronym, div#page_accueil #frugacite-definition {
   cursor: default;
@@ -91,6 +93,14 @@ div#page_accueil #frugacite-accronym span:hover {
 div#page_accueil #frugacite-definition span:hover {
   text-decoration: underline;
   text-underline-offset: 0.25rem;
+}
+
+div#page_these {
+  font-family: Lato, Arial, sans-serif;
+}
+div#page_these h3 {
+  font-weight: 500;
+  margin: 1.5rem 0;
 }
 
 div#page_contact form {

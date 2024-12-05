@@ -1,3 +1,6 @@
+//FONT-STYLE
+$font-family: Lato, Arial, sans-serif;
+
 //COLORS
 $white: #ffffff;
 $black: #000000;
@@ -23,7 +26,7 @@ html {
 }
 
 body {
-  font-family: Lato, Arial, sans-serif;
+  font-family: $font-family;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -82,6 +85,7 @@ nav {
 // FOR ALL PAGES -----------------
 h1.title{
   text-transform: uppercase;
+  font-weight: 700;
 }
 h2{
   margin: 1em 0;
@@ -92,15 +96,16 @@ p, li{
 .bold {
   font-weight: bold;
 }
+.accueil-color_green{
+  color: $vert_foncee;
+}
 
 //PAGE : ACCUEIL -----------------
 div#page_accueil{
   img{
     max-width: 100%;
   }
-  .accueil-color_green{
-    color: $vert_foncee;
-  }
+
   #frugacite-accronym, #frugacite-definition{
     cursor: default;
   }
@@ -122,10 +127,19 @@ div#page_accueil{
   }
 }
 
+//PAGE : THESE -----------------
+div#page_these{
+  font-family: $font-family;
+  h3{
+    font-weight: 500;
+    margin: 1.5rem  0;
+  }
+}
+
 //PAGE : CONTACT -----------------
 div#page_contact{
   form{
-    font-family: Lato, Arial, sans-serif;
+    font-family: $font-family;
     padding: 2rem 0;
     label{
       margin-top: 1.5rem;
