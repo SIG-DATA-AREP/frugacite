@@ -34,4 +34,15 @@ $(document).ready(function () {
         $(`a.nav-link[id="${id_of_dorpdown}"]`).addClass("active");
     } else $(`a.nav-link[href="#accueil"]`).addClass("active");
   });
+
+  // Select all map sliders
+  $(".map_slider").each(function () {
+    const slider = $(this); // Current slider instance
+
+    // Click event for the right button
+    // slider.find(".map-right-button").on("click", function () {
+    //   // Slide in the sliding div for the current slider
+    //   slider.find(".map-sliding-div").css("left", "0");
+    // });
+  });
 });
