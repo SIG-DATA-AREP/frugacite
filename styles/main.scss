@@ -69,7 +69,7 @@ body {
   font-family: $arep-font-family;
   font-size: $text-font-size; // Makes 1rem
   margin: 0;
-  padding: 0;
+  padding: 0 0;
   box-sizing: border-box;
 }
 
@@ -146,6 +146,7 @@ h2,h3{
 
 a.text-link{
   color: $dark_grey;
+  cursor: pointer;
   &:hover{
     font-weight: bold;
   }
@@ -175,6 +176,11 @@ div#page_accueil{
       text-decoration: underline;
       text-underline-offset: 0.25rem;
     }
+  }
+  .bg_redFont{
+    background-color: rgba($coral, $light_opacity);
+    padding: 1rem;
+    height: fit-content !important;
   }
 }
 

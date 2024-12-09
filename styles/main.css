@@ -25,7 +25,7 @@ body {
   font-family: "lato regular", sans-serif;
   font-size: 23px;
   margin: 0;
-  padding: 0;
+  padding: 0 0;
   box-sizing: border-box;
 }
 
@@ -94,6 +94,7 @@ h2, h3 {
 
 a.text-link {
   color: #212121;
+  cursor: pointer;
 }
 a.text-link:hover {
   font-weight: bold;
@@ -118,6 +119,12 @@ div#page_accueil #frugacite-accronym span:hover {
 div#page_accueil #frugacite-definition span:hover {
   text-decoration: underline;
   text-underline-offset: 0.25rem;
+}
+div#page_accueil .bg_redFont {
+  background-color: rgba(225, 80, 81, 0.2);
+  padding: 1rem;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
 }
 
 div#page_publication_donnees h1, div#page_publication_donnees h2, div#page_publication_donnees h3 {
