@@ -201,6 +201,7 @@ a.text-link{
     display: none; /* Initially hidden */
     justify-content: center;
     align-items: center;
+    box-shadow: 0 -10px 10px -5px rgba($grey, 0.5);
     p{
       max-height: 100%;
       text-align: center;

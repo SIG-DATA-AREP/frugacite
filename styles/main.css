@@ -146,6 +146,7 @@ a.text-link:hover {
   display: none; /* Initially hidden */
   justify-content: center;
   align-items: center;
+  box-shadow: 0 -10px 10px -5px rgba(157, 157, 156, 0.5);
 }
 .map_slider .map-bottom-div p {
   max-height: 100%;
