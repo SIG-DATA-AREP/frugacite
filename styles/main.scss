@@ -162,7 +162,11 @@ a.text-link{
 
 //ELEMENT : MAP SLIDER -----------------
 .map_slider{
-  margin-bottom: 2rem !important;
+  display: none;
+  &.show{
+    display: block;
+  }
+
   .map-container {
     position: relative;
     width: 100%;
@@ -237,6 +241,27 @@ a.text-link{
 
     &.show{
       right: 100px !important; /* Displayed from the start off-screen */
+    }
+  }
+}
+
+.mapSliderContainer{
+
+  .slider-navigation {
+    text-align: center;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .slider-navigation button {
+    margin: 0 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    padding: 0 1rem;
+    border-bottom: 1px solid $dark_grey;
+    &:hover{
+      background-color: rgba($coral, $light_opacity);;
     }
   }
 }

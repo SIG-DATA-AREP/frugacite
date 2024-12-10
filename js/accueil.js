@@ -17,5 +17,56 @@ $(document).ready(function () {
       // Slide in the sliding div for the current slider
       slider.find(".map-sliding-div").toggleClass("show");
     });
+
+    //Map list slider
+    var $sliders = $(".map_slider");
+    var $prevBtn = $("#prevBtn");
+    var $nextBtn = $("#nextBtn");
+
+    var currentIndex = 0; // Start with the first slider
+
+    // Initially hide all and show the first
+    $sliders.hide().eq(currentIndex).show();
+    updateButtonState();
+
+    function showSlider(index) {
+      $sliders.stop(true, true).fadeOut(300);
+      $sliders
+        .eq(index)
+        .stop(true, true)
+        .fadeIn(300, function () {
+          updateButtonState();
+        });
+    }
+
+    function updateButtonState() {
+      // If we are at the first slider, disable "Previous"
+      if (currentIndex === 0) {
+        $prevBtn.prop("disabled", true);
+      } else {
+        $prevBtn.prop("disabled", false);
+      }
+
+      // If we are at the last slider, disable "Next"
+      if (currentIndex === $sliders.length - 1) {
+        $nextBtn.prop("disabled", true);
+      } else {
+        $nextBtn.prop("disabled", false);
+      }
+    }
+
+    $prevBtn.click(function () {
+      if (currentIndex > 0) {
+        currentIndex--;
+        showSlider(currentIndex);
+      }
+    });
+
+    $nextBtn.click(function () {
+      if (currentIndex < $sliders.length - 1) {
+        currentIndex++;
+        showSlider(currentIndex);
+      }
+    });
   });
 });

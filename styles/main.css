@@ -106,7 +106,10 @@ a.text-link:hover {
 }
 
 .map_slider {
-  margin-bottom: 2rem !important;
+  display: none;
+}
+.map_slider.show {
+  display: block;
 }
 .map_slider .map-container {
   position: relative;
@@ -177,6 +180,23 @@ a.text-link:hover {
 }
 .map_slider .map-sliding-div.show {
   right: 100px !important; /* Displayed from the start off-screen */
+}
+
+.mapSliderContainer .slider-navigation {
+  text-align: center;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+}
+.mapSliderContainer .slider-navigation button {
+  margin: 0 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  padding: 0 1rem;
+  border-bottom: 1px solid #212121;
+}
+.mapSliderContainer .slider-navigation button:hover {
+  background-color: rgba(225, 80, 81, 0.2);
 }
 
 div#page_accueil img {
