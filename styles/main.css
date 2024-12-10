@@ -283,7 +283,7 @@ footer section .image-container {
 
 @media (max-width: 990px) {
   nav {
-    margin-top: -3rem;
+    margin-top: -2.5rem;
   }
   nav div.container, nav li {
     border: none !important;

@@ -369,7 +369,7 @@ footer {
 
 @media (max-width: 990px) {
     nav {
-      margin-top: $mobile-nav-marginTop;
+      margin-top: calc($mobile-nav-marginTop + 0.5rem);
         div.container, li {
             border: none !important;
         }
