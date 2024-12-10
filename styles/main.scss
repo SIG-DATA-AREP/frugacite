@@ -169,6 +169,7 @@ a.text-link{
   }
   
   .map-right-button {
+    font-size: 1em;
     position: absolute;
     top: 0;
     right: 0;
@@ -182,7 +183,7 @@ a.text-link{
     color: white;
     text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
   }
   
   .map-right-button:hover {
@@ -195,27 +196,37 @@ a.text-link{
     left: 0;
     width: 100%;
     height: 20%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
-    color: white;
+    background-color: rgba(#e5e5e5, 0.7); /* Semi-transparent black */
+    color: $black;
     display: none; /* Initially hidden */
     justify-content: center;
     align-items: center;
-    text-align: center;
+    p{
+      max-height: 100%;
+      text-align: center;
+      line-height: 1.5;
+      cursor: default;
+      padding: 1em !important;
+    }
+    
+    &.show{
+      display: flex; /* Show on hover */
+    }
   }
   
   .map-sliding-div {
     position: absolute;
     top: 0;
-    left: -80%; /* Start off-screen */
-    width: 80%;
+    right: -85%; /* Start off-screen from the right */
+    width: 85%;
     height: 100%;
-    background-color: rgba(0, 0, 0, $light_opacity); /* 20% transparent black */
+    background-color: rgba(#e5e5e5, 0.8); /* 20% transparent black */
     z-index: 10;
-    transition: left 0.5s ease; /* Sliding animation */
-  }
-  
-  .map-container:hover .bottom-div {
-    display: flex; /* Show on hover */
+    transition: right 0.5s ease; /* Animate the 'right' property */
+
+    &.show{
+      right: 100px !important; /* Displayed from the start off-screen */
+    }
   }
 }
 
