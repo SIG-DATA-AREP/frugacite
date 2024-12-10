@@ -16,7 +16,7 @@ h3 {
 }
 
 /*PROJECT VARIBLES*/
-p, i, b, li {
+p, i, b, li, label {
   font-family: "lato regular", sans-serif;
   font-size: 20px;
 }

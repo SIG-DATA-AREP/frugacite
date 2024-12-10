@@ -49,7 +49,7 @@ h3{
 
 /*PROJECT VARIBLES*/
 
-p,i,b,li{
+p,i,b,li,label{
   $project-text-font-size : calc($text-font-size - 3px);
   font-family: $arep-font-family;
   font-size: $project-text-font-size; // Makes 1rem
