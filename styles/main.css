@@ -287,7 +287,7 @@ div#page_equipe .team-grid .card .card-overlay {
   bottom: 0;
   background: rgba(29, 29, 27, 0.8);
   color: #ffffff;
-  padding: 20px;
+  padding: 0 1rem;
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
