@@ -345,6 +345,10 @@ div#page_equipe{
         background: $grey;
         width: 100%;
         height: $card_height;
+        img{
+          width: 100%;
+          height: auto;
+        }
       }
   
       .card-name {
@@ -371,6 +375,10 @@ div#page_equipe{
         align-items: center;
         justify-content: center;
         text-align: center;
+        p{
+          font-family: $arep-font-family;
+          font-size: 0.6rem;
+        }
       }
   
       &:hover {
