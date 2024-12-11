@@ -181,7 +181,7 @@ a.text-link{
   }
   
   .map-right-button {
-    font-size: 1em;
+    font-size: 0.7em;
     position: absolute;
     top: 0;
     right: 0;
@@ -196,6 +196,14 @@ a.text-link{
     text-align: center;
     cursor: pointer;
     transition: background-color 0.5s ease;
+    &::before {
+      content: "\226A";
+      white-space: pre; 
+    }
+    &.show::before{
+      content: "\226B";
+      white-space: pre; 
+    }
   }
   
   .map-right-button:hover {
@@ -259,6 +267,13 @@ a.text-link{
       font-size: 2rem;
       &:hover{
         font-weight: bold;
+      }
+      &.disabled{
+        cursor: default;
+        opacity: 0.5;
+        &:hover{
+          font-weight: normal;
+        }
       }
     }
   }

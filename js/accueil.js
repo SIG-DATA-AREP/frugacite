@@ -16,6 +16,7 @@ $(document).ready(function () {
     slider.find(".map-right-button").on("click", function () {
       // Slide in the sliding div for the current slider
       slider.find(".map-sliding-div").toggleClass("show");
+      slider.find(".map-right-button").toggleClass("show");
     });
 
     //Map list slider
@@ -42,16 +43,16 @@ $(document).ready(function () {
     function updateButtonState() {
       // If we are at the first slider, disable "Previous"
       if (currentIndex === 0) {
-        $prevBtn.prop("disabled", true);
+        $prevBtn.addClass("disabled");
       } else {
-        $prevBtn.prop("disabled", false);
+        $prevBtn.removeClass("disabled");
       }
 
       // If we are at the last slider, disable "Next"
       if (currentIndex === $sliders.length - 1) {
-        $nextBtn.prop("disabled", true);
+        $nextBtn.addClass("disabled");
       } else {
-        $nextBtn.prop("disabled", false);
+        $nextBtn.removeClass("disabled");
       }
     }
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*AREP DESIGN VARIBLES*/
 h1 {
   font-family: "lato regular", sans-serif;
@@ -124,7 +125,7 @@ a.text-link:hover {
      object-fit: cover;
 }
 .map_slider .map-right-button {
-  font-size: 1em;
+  font-size: 0.7em;
   position: absolute;
   top: 0;
   right: 0;
@@ -139,6 +140,14 @@ a.text-link:hover {
   text-align: center;
   cursor: pointer;
   transition: background-color 0.5s ease;
+}
+.map_slider .map-right-button::before {
+  content: "≪";
+  white-space: pre;
+}
+.map_slider .map-right-button.show::before {
+  content: "≫";
+  white-space: pre;
 }
 .map_slider .map-right-button:hover {
   background-color: #D31216; /* Coral color */
@@ -195,6 +204,13 @@ a.text-link:hover {
 }
 .mapSliderContainer .slider-navigation span:hover {
   font-weight: bold;
+}
+.mapSliderContainer .slider-navigation span.disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+.mapSliderContainer .slider-navigation span.disabled:hover {
+  font-weight: normal;
 }
 
 div#page_accueil img {
