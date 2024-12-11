@@ -187,16 +187,14 @@ a.text-link:hover {
   margin-top: 0.2rem;
   margin-bottom: 1rem;
 }
-.mapSliderContainer .slider-navigation button {
-  margin: 0 10px;
+.mapSliderContainer .slider-navigation {
   cursor: pointer;
-  border: none;
-  border-radius: 0;
-  padding: 0 1rem;
-  border-bottom: 1px solid #212121;
 }
-.mapSliderContainer .slider-navigation button:hover {
-  background-color: rgba(225, 80, 81, 0.2);
+.mapSliderContainer .slider-navigation span {
+  font-size: 2rem;
+}
+.mapSliderContainer .slider-navigation span:hover {
+  font-weight: bold;
 }
 
 div#page_accueil img {

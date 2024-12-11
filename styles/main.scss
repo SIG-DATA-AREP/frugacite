@@ -253,15 +253,13 @@ a.text-link{
     margin-bottom: 1rem;
   }
 
-  .slider-navigation button {
-    margin: 0 10px;
+  .slider-navigation{
     cursor: pointer;
-    border: none;
-    border-radius: 0;
-    padding: 0 1rem;
-    border-bottom: 1px solid $dark_grey;
-    &:hover{
-      background-color: rgba($coral, $light_opacity);;
+    span{
+      font-size: 2rem;
+      &:hover{
+        font-weight: bold;
+      }
     }
   }
 }
