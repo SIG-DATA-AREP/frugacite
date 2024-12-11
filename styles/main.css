@@ -238,6 +238,7 @@ div#page_accueil .bg_redFont {
   padding: 1rem;
   height: -moz-fit-content !important;
   height: fit-content !important;
+  border-radius: 0.3rem;
 }
 
 div#page_publication_donnees h1, div#page_publication_donnees h2, div#page_publication_donnees h3 {
