@@ -404,6 +404,7 @@ footer {
     .image-container {
       width: calc($logo_partener_height - 0.5rem);
       height: calc($logo_partener_height - 0.5rem);
+      margin-right: 0.5rem;
       background-color: $couleur_logo;
       -webkit-mask: url('../images/footer/Ladyss-logo-white.webp') no-repeat center;
       -webkit-mask-size: contain;
