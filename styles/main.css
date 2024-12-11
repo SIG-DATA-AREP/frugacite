@@ -41,7 +41,7 @@ header {
   padding: 0;
 }
 header img.logo {
-  height: 4rem;
+  height: 3rem;
 }
 
 nav ul {
@@ -283,15 +283,15 @@ footer section a {
   font-size: 0.8rem;
 }
 footer section img.logo {
-  height: 4rem;
+  height: 3rem;
 }
 footer section .partner {
   height: 3rem;
   width: auto;
 }
 footer section .image-empty-container {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
 }
 footer section .cm {
   height: 1.5rem !important;
@@ -323,7 +323,7 @@ footer section .image-container {
 
 @media (max-width: 990px) {
   nav {
-    margin-top: -2.5rem;
+    margin-top: -1.5rem;
   }
   nav div.container, nav li {
     border: none !important;
