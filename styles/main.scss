@@ -325,6 +325,65 @@ div#page_equipe{
     margin-top: 2rem;
   }
 
+  .team-grid {
+    $card_height:15rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($card_height, 1fr));
+    gap: 3rem;
+    margin: 0 auto;
+  
+    .card {
+      background: $light_grey;
+      display: flex;
+      flex-direction: column;
+      border-radius: 0.3rem;
+      overflow: hidden;
+      border: 1px solid $grey;
+      position: relative;
+  
+      .card-image {
+        background: $grey;
+        width: 100%;
+        height: $card_height;
+      }
+  
+      .card-name {
+        background: $black;
+        color: $white;
+        padding: 1rem;
+        text-align: center;
+      }
+  
+      .card-overlay {
+        position: absolute;
+        top: 0;
+        left: 0; 
+        right: 0; 
+        bottom: 0;
+        background: rgba($black, 0.8);
+        color: $white;
+        padding: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+  
+      &:hover {
+        .card-overlay {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+  
+
 }
 
 //PAGE : THESE -----------------
