@@ -312,11 +312,26 @@ div#page_accueil{
   }
 }
 
+//PAGE : EQUIPE -----------------
+div#page_equipe{
+  $equipe_logo_height : $logo_partener_height + 3rem;
+  .partner{
+    height: $equipe_logo_height;
+    width: auto;
+
+  }
+  .cm{
+    height: calc($equipe_logo_height - 3rem);
+    margin-top: 2rem;
+  }
+
+}
+
 //PAGE : THESE -----------------
 div#page_these{
 }
 
-//PAGE : THESE -----------------
+//PAGE : PUBLICATION -----------------
 div#page_publication_donnees{
   h1,h2,h3{
     margin-top: 2rem !important;

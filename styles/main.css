@@ -241,6 +241,15 @@ div#page_accueil .bg_redFont {
   border-radius: 0.3rem;
 }
 
+div#page_equipe .partner {
+  height: 6rem;
+  width: auto;
+}
+div#page_equipe .cm {
+  height: 3rem;
+  margin-top: 2rem;
+}
+
 div#page_publication_donnees h1, div#page_publication_donnees h2, div#page_publication_donnees h3 {
   margin-top: 2rem !important;
 }
