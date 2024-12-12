@@ -323,6 +323,11 @@ div#page_equipe{
   .cm{
     height: calc($equipe_logo_height - 3rem);
     margin-top: 2rem;
+  }  
+  
+  .idf{
+    height: calc($equipe_logo_height - 3rem);
+    margin-top: 2rem;
   }
 
   .team-grid {
@@ -345,9 +350,16 @@ div#page_equipe{
         background: $grey;
         width: 100%;
         height: $card_height;
+        display: flex;
+        align-items: center;   // vertically center
+        justify-content: center;
         img{
           width: 100%;
           height: auto;
+          &.resizing{
+            width: auto !important;
+            height: 100% !important;
+          }
         }
       }
   

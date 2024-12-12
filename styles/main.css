@@ -249,6 +249,10 @@ div#page_equipe .cm {
   height: 3rem;
   margin-top: 2rem;
 }
+div#page_equipe .idf {
+  height: 3rem;
+  margin-top: 2rem;
+}
 div#page_equipe .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
@@ -268,10 +272,17 @@ div#page_equipe .team-grid .card .card-image {
   background: #9d9d9c;
   width: 100%;
   height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 div#page_equipe .team-grid .card .card-image img {
   width: 100%;
   height: auto;
+}
+div#page_equipe .team-grid .card .card-image img.resizing {
+  width: auto !important;
+  height: 100% !important;
 }
 div#page_equipe .team-grid .card .card-name {
   background: #1d1d1b;
