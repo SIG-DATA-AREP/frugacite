@@ -106,6 +106,10 @@ a.text-link:hover {
   font-weight: bold;
 }
 
+.marginTop {
+  margin-top: 1.5rem;
+}
+
 .map_slider {
   display: none;
 }
@@ -405,7 +409,7 @@ footer section .univ {
   margin-top: 1rem;
 }
 footer section .sorbonne {
-  height: 1.5rem !important;
+  height: 2.5rem !important;
   margin-top: 1rem;
 }
 footer section .image-container {

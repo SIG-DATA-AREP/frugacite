@@ -160,6 +160,10 @@ a.text-link{
   }
 }
 
+.marginTop{
+  margin-top: 1.5rem;
+}
+
 //ELEMENT : MAP SLIDER -----------------
 .map_slider{
   display: none;
@@ -517,7 +521,7 @@ footer {
       margin-top: 1rem;
     }
     .sorbonne{
-      height: calc($logo_partener_height - 1.5rem) !important;
+      height: calc($logo_partener_height - 0.5rem) !important;
       margin-top: 1rem;
     }
 
