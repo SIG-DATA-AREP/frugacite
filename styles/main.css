@@ -124,8 +124,17 @@ a.text-link:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.map_slider .map-main-image.no-right-button {
+  width: 100%;
+}
+.map_slider .map-hover-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .map_slider .map-right-button {
-  font-size: 0.7em;
+  font-size: 0.6em;
   position: absolute;
   top: 0;
   right: 0;
@@ -133,21 +142,29 @@ a.text-link:hover {
   height: 100%;
   background-color: #e15051; /* Coral color */
   pointer-events: auto !important;
-  display: flex;
-  justify-content: center;
   align-items: center;
   color: white;
-  text-align: center;
+  padding-top: 10%;
+  text-align: left;
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
-.map_slider .map-right-button::before {
-  content: "≪";
-  white-space: pre;
+.map_slider .map-right-button span {
+  display: block;
+  text-align: center;
+  margin-top: 200%;
+  font-size: 5rem;
 }
-.map_slider .map-right-button.show::before {
-  content: "≫";
+.map_slider .map-right-button span::after {
+  content: "➧";
   white-space: pre;
+  display: inline-block; /* Important to allow transform rotation */
+  transform: rotate(180deg);
+}
+.map_slider .map-right-button span.show::after {
+  white-space: pre;
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(360deg);
 }
 .map_slider .map-right-button:hover {
   background-color: #D31216; /* Coral color */
@@ -167,8 +184,8 @@ a.text-link:hover {
 }
 .map_slider .map-bottom-div p {
   max-height: 100%;
-  text-align: center;
-  line-height: 1.3em;
+  text-align: left;
+  line-height: 1em;
   cursor: default;
   padding: 1em !important;
 }

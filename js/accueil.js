@@ -16,7 +16,7 @@ $(document).ready(function () {
     slider.find(".map-right-button").on("click", function () {
       // Slide in the sliding div for the current slider
       slider.find(".map-sliding-div").toggleClass("show");
-      slider.find(".map-right-button").toggleClass("show");
+      slider.find(".map-right-button span").toggleClass("show");
     });
 
     //Map list slider

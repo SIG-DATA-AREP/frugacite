@@ -178,11 +178,20 @@ a.text-link{
     width: calc(100% - 100px);
     height: 100%;
     object-fit: cover;
+    &.no-right-button{
+      width: 100%;
+    }
 
+  }
+
+  .map-hover-image {
+    width: calc(100%);
+    height: 100%;
+    object-fit: cover;
   }
   
   .map-right-button {
-    font-size: 0.7em;
+    font-size: 0.6em;
     position: absolute;
     top: 0;
     right: 0;
@@ -190,20 +199,30 @@ a.text-link{
     height: 100%;
     background-color: $coral; /* Coral color */
     pointer-events: auto !important;
-    display: flex;
-    justify-content: center;
     align-items: center;
     color: white;
-    text-align: center;
+    padding-top: 10%;
+    text-align: left;
     cursor: pointer;
     transition: background-color 0.5s ease;
-    &::before {
-      content: "\226A";
-      white-space: pre; 
-    }
-    &.show::before{
-      content: "\226B";
-      white-space: pre; 
+    span{
+      display: block;
+      text-align: center;
+      margin-top: 200%;
+      font-size: 5rem;
+      &::after {
+        content: "\27A7";
+        white-space: pre; 
+        display: inline-block;     /* Important to allow transform rotation */
+        transform: rotate(180deg);
+      }
+      &.show::after{
+        // content: "\27A7";
+        white-space: pre;
+        transition: transform 0.3s ease-in-out;
+        transform: rotate(360deg);
+
+      }
     }
   }
   
@@ -225,8 +244,8 @@ a.text-link{
     box-shadow: 0 -10px 10px -5px rgba($grey, 0.5);
     p{
       max-height: 100%;
-      text-align: center;
-      line-height: 1.3em;
+      text-align: left;
+      line-height: 1em;
       cursor: default;
       padding: 1em !important;
     }
