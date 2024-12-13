@@ -389,6 +389,10 @@ div#page_equipe{
             width: auto !important;
             height: 100% !important;
           }
+          &.default{
+            width: 100%;
+            height: 100%;
+          }
         }
       }
   

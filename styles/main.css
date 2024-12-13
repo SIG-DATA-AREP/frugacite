@@ -309,6 +309,10 @@ div#page_equipe .team-grid .card .card-image img.resizing {
   width: auto !important;
   height: 100% !important;
 }
+div#page_equipe .team-grid .card .card-image img.default {
+  width: 100%;
+  height: 100%;
+}
 div#page_equipe .team-grid .card .card-name {
   background: #1d1d1b;
   color: #ffffff;
