@@ -286,23 +286,24 @@ a.text-link{
 
   .slider-navigation {
     text-align: center;
-    margin-top: 0.2rem;
+    margin-top: 0.1rem;
     margin-bottom: 1rem;
-  }
-
-  .slider-navigation{
     cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     span{
-      font-size: 2rem;
-      &:hover{
-        font-weight: bold;
-      }
+      font-size: 1rem;
       &.disabled{
         cursor: default;
         opacity: 0.5;
-        &:hover{
-          font-weight: normal;
-        }
+      }
+      &#prevBtn:not(.disabled):hover{
+        font-weight: bold;
+      }
+      &#nextBtn:not(.disabled):hover{
+        font-weight: bold;
       }
     }
   }

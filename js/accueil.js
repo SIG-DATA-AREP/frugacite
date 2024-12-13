@@ -2,8 +2,9 @@ $(document).ready(function () {
   bindHoverEffects("#frugacite-accronym span", "#frugacite-definition span");
 
   // Select all map sliders
+  // Sélection de tous les sliders
   $(".map_slider").each(function () {
-    const slider = $(this); // Current slider instance
+    const slider = $(this); // Instance du slider actuel
 
     slider.find(".hoverer").on("mouseenter", function () {
       slider.find(".map-bottom-div").addClass("show");
@@ -12,21 +13,21 @@ $(document).ready(function () {
       slider.find(".map-bottom-div").removeClass("show");
     });
 
-    // Click event for the right button
+    // Bouton de droite
     slider.find(".map-right-button").on("click", function () {
-      // Slide in the sliding div for the current slider
       slider.find(".map-sliding-div").toggleClass("show");
       slider.find(".map-right-button span").toggleClass("show");
     });
 
-    //Map list slider
+    // Gestion de la navigation entre les sliders
     var $sliders = $(".map_slider");
     var $prevBtn = $("#prevBtn");
     var $nextBtn = $("#nextBtn");
+    var $indicator = $("#sliderIndicator"); // L'élément qui affiche l'indicateur
+    var total = $sliders.length;
+    var currentIndex = 0; // Commence au premier slider
 
-    var currentIndex = 0; // Start with the first slider
-
-    // Initially hide all and show the first
+    // Cacher tous les sliders et afficher le premier
     $sliders.hide().eq(currentIndex).show();
     updateButtonState();
 
@@ -41,19 +42,22 @@ $(document).ready(function () {
     }
 
     function updateButtonState() {
-      // If we are at the first slider, disable "Previous"
+      // Gestion de l'état du bouton "Précédent"
       if (currentIndex === 0) {
         $prevBtn.addClass("disabled");
       } else {
         $prevBtn.removeClass("disabled");
       }
 
-      // If we are at the last slider, disable "Next"
+      // Gestion de l'état du bouton "Suivant"
       if (currentIndex === $sliders.length - 1) {
         $nextBtn.addClass("disabled");
       } else {
         $nextBtn.removeClass("disabled");
       }
+
+      // Mise à jour de l'indicateur "currentIndex/total"
+      $indicator.text(currentIndex + 1 + "/" + total);
     }
 
     $prevBtn.click(function () {
