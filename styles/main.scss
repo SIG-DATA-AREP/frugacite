@@ -175,9 +175,10 @@ a.text-link{
   }
   
   .map-main-image {
-    width: 100%;
+    width: calc(100% - 100px);
     height: 100%;
     object-fit: cover;
+
   }
   
   .map-right-button {

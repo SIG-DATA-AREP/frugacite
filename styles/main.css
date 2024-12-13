@@ -119,7 +119,7 @@ a.text-link:hover {
   overflow: hidden;
 }
 .map_slider .map-main-image {
-  width: 100%;
+  width: calc(100% - 100px);
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
