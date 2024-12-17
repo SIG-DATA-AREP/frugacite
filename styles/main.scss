@@ -313,7 +313,12 @@ a.text-link{
 div#page_accueil{
   img{
     max-width: 100%;
+    &#timeline-legend{
+      margin-top: 2em;
+      width: 80%;
+    }
   }
+  
 
   #frugacite-accronym, #frugacite-definition{
     cursor: default;

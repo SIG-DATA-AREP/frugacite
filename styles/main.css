@@ -242,6 +242,10 @@ a.text-link:hover {
 div#page_accueil img {
   max-width: 100%;
 }
+div#page_accueil img#timeline-legend {
+  margin-top: 2em;
+  width: 80%;
+}
 div#page_accueil #frugacite-accronym, div#page_accueil #frugacite-definition {
   cursor: default;
 }
