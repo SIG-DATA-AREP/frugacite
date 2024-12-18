@@ -232,10 +232,10 @@ a.text-link:hover {
   cursor: default;
   opacity: 0.5;
 }
-.mapSliderContainer .slider-navigation span#prevBtn:not(.disabled):hover {
+.mapSliderContainer .slider-navigation span.prevBtn:not(.disabled):hover {
   font-weight: bold;
 }
-.mapSliderContainer .slider-navigation span#nextBtn:not(.disabled):hover {
+.mapSliderContainer .slider-navigation span.nextBtn:not(.disabled):hover {
   font-weight: bold;
 }
 
