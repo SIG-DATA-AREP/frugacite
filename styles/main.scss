@@ -509,7 +509,32 @@ div#page_publication_donnees{
     }
   }
 }
-
+//PAGE : CONTACT -----------------
+div#page_ressources{
+  .card-header {
+    cursor: pointer;
+  }
+  
+  .btn-link {
+    text-decoration: none;
+    color: $black;
+    width: 100%;
+    text-align: left;
+    h5 {
+      margin: 0;
+      float: left;
+      width: 95%;
+    }
+    span {
+      width: 5%;
+      text-align: right;
+      transition: transform 0.3s ease;
+      &.show{
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
 //PAGE : CONTACT -----------------
 div#page_contact{
   form{
