@@ -352,6 +352,32 @@ div#page_equipe .team-grid .card:hover .card-overlay {
   transform: translateY(0);
 }
 
+div#page_methodologie_resultats img {
+  max-width: 100%;
+}
+div#page_methodologie_resultats .card-header {
+  cursor: pointer;
+}
+div#page_methodologie_resultats .btn-link {
+  text-decoration: none;
+  color: #1d1d1b;
+  width: 100%;
+  text-align: left;
+}
+div#page_methodologie_resultats .btn-link h5 {
+  margin: 0;
+  float: left;
+  width: 95%;
+}
+div#page_methodologie_resultats .btn-link span {
+  width: 5%;
+  text-align: right;
+  transition: transform 0.3s ease;
+}
+div#page_methodologie_resultats .btn-link span.show {
+  transform: rotate(45deg);
+}
+
 div#page_publication_donnees h1, div#page_publication_donnees h2, div#page_publication_donnees h3 {
   margin-top: 2rem !important;
 }
