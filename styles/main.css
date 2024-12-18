@@ -377,8 +377,11 @@ div#page_methodologie_resultats .btn-link span {
   text-align: right;
   transition: transform 0.3s ease;
 }
-div#page_methodologie_resultats .btn-link span.show {
-  transform: rotate(45deg);
+div#page_methodologie_resultats .btn-link span::after {
+  content: "+";
+}
+div#page_methodologie_resultats .btn-link span.show::after {
+  content: "-";
 }
 
 div#page_publication_donnees h1, div#page_publication_donnees h2, div#page_publication_donnees h3 {
@@ -403,8 +406,11 @@ div#page_publication_donnees .btn-link span {
   text-align: right;
   transition: transform 0.3s ease;
 }
-div#page_publication_donnees .btn-link span.show {
-  transform: rotate(45deg);
+div#page_publication_donnees .btn-link span::after {
+  content: "+";
+}
+div#page_publication_donnees .btn-link span.show::after {
+  content: "-";
 }
 
 div#page_ressources ul > li > ul > li {
@@ -429,8 +435,11 @@ div#page_ressources .btn-link span {
   text-align: right;
   transition: transform 0.3s ease;
 }
-div#page_ressources .btn-link span.show {
-  transform: rotate(45deg);
+div#page_ressources .btn-link span::after {
+  content: "+";
+}
+div#page_ressources .btn-link span.show::after {
+  content: "-";
 }
 
 div#page_contact form {

@@ -1,7 +1,9 @@
 $(document).ready(function () {
-  toogle_section = $(".card-header");
-  toogle_section.on("click", function () {
-    toogle_section.find(".btn span").addClass("show");
+  // TOOGLE FOR CARD HEADER
+  $(".card-header").on("click", function () {
+    if ($(this).find(".btn span").hasClass("show"))
+      $(this).find(".btn span").removeClass("show");
+    else $(this).find(".btn span").addClass("show");
   });
 
   // Sélection de tous les sliders 01

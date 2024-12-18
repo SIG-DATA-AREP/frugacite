@@ -475,8 +475,11 @@ div#page_methodologie_resultats{
       width: 5%;
       text-align: right;
       transition: transform 0.3s ease;
-      &.show{
-        transform: rotate(45deg);
+      &::after{
+        content: "+";
+      }
+      &.show::after{
+        content: "-";
       }
     }
   }
@@ -506,8 +509,11 @@ div#page_publication_donnees{
       width: 5%;
       text-align: right;
       transition: transform 0.3s ease;
-      &.show{
-        transform: rotate(45deg);
+      &::after{
+        content: "+";
+      }
+      &.show::after{
+        content: "-";
       }
     }
   }
@@ -535,8 +541,11 @@ div#page_ressources{
       width: 5%;
       text-align: right;
       transition: transform 0.3s ease;
-      &.show{
-        transform: rotate(45deg);
+      &::after{
+        content: "+";
+      }
+      &.show::after{
+        content: "-";
       }
     }
   }
