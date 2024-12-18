@@ -350,6 +350,9 @@ div#page_accueil{
 //PAGE : EQUIPE -----------------
 div#page_equipe{
   $equipe_logo_height : $logo_partener_height + 3rem;
+  ul>li>ul>li{
+    list-style-type: square;
+  }
   .partner{
     height: $equipe_logo_height;
     width: auto;
@@ -511,6 +514,9 @@ div#page_publication_donnees{
 }
 //PAGE : CONTACT -----------------
 div#page_ressources{
+  ul>li>ul>li{
+    list-style-type: square;
+  }
   .card-header {
     cursor: pointer;
   }

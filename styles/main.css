@@ -271,6 +271,9 @@ div#page_accueil .bg_redFont {
   border-radius: 0.3rem;
 }
 
+div#page_equipe ul > li > ul > li {
+  list-style-type: square;
+}
 div#page_equipe .partner {
   height: 6rem;
   width: auto;
@@ -404,6 +407,9 @@ div#page_publication_donnees .btn-link span.show {
   transform: rotate(45deg);
 }
 
+div#page_ressources ul > li > ul > li {
+  list-style-type: square;
+}
 div#page_ressources .card-header {
   cursor: pointer;
 }
