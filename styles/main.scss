@@ -476,10 +476,10 @@ div#page_methodologie_resultats{
       text-align: right;
       transition: transform 0.3s ease;
       &::after{
-        content: "+";
-      }
-      &.show::after{
         content: "-";
+      }
+      &.hide::after{
+        content: "+";
       }
     }
   }
@@ -510,14 +510,45 @@ div#page_publication_donnees{
       text-align: right;
       transition: transform 0.3s ease;
       &::after{
-        content: "+";
-      }
-      &.show::after{
         content: "-";
+      }
+      &.hide::after{
+        content: "+";
       }
     }
   }
 }
+
+//PAGE : PUBLICATION -----------------
+div#page_integrer{
+  .card-header {
+    cursor: pointer;
+  }
+  
+  .btn-link {
+    text-decoration: none;
+    color: $black;
+    width: 100%;
+    text-align: left;
+    h5 {
+      margin: 0;
+      float: left;
+      width: 95%;
+    }
+    span {
+      width: 5%;
+      text-align: right;
+      transition: transform 0.3s ease;
+      &::after{
+        content: "-";
+      }
+      &.hide::after{
+        content: "+";
+      }
+    }
+  }
+}
+
 //PAGE : CONTACT -----------------
 div#page_ressources{
   ul>li>ul>li{
@@ -542,10 +573,10 @@ div#page_ressources{
       text-align: right;
       transition: transform 0.3s ease;
       &::after{
-        content: "+";
-      }
-      &.show::after{
         content: "-";
+      }
+      &.hide::after{
+        content: "+";
       }
     }
   }
