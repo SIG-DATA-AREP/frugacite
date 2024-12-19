@@ -524,8 +524,17 @@ div#page_publication_donnees{
 
 //PAGE : PUBLICATION -----------------
 div#page_integrer{
+  li{
+    margin-top: 1em;
+  }
+  ol>li>ul>li{
+    list-style-type: disc;
+  }
   ul>li>ul>li{
-    list-style-type: square;
+    list-style-type: circle;
+    ul>li{
+      list-style-type: square;
+    }
   }
   .card-header {
     cursor: pointer;

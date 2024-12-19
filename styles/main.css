@@ -416,7 +416,16 @@ div#page_publication_donnees .btn-link span.hide::after {
   content: "+";
 }
 
+div#page_integrer li {
+  margin-top: 1em;
+}
+div#page_integrer ol > li > ul > li {
+  list-style-type: disc;
+}
 div#page_integrer ul > li > ul > li {
+  list-style-type: circle;
+}
+div#page_integrer ul > li > ul > li ul > li {
   list-style-type: square;
 }
 div#page_integrer .card-header {
