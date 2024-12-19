@@ -444,6 +444,12 @@ div#page_integrer .btn-link span::after {
 div#page_integrer .btn-link span.hide::after {
   content: "+";
 }
+div#page_integrer div.note {
+  padding: 0.5em;
+  background-color: rgba(225, 80, 81, 0.4);
+  border-radius: 0.2em;
+  margin-bottom: 1em;
+}
 
 div#page_ressources ul > li > ul > li {
   list-style-type: square;
