@@ -102,6 +102,9 @@ a.text-link {
   color: #212121;
   cursor: pointer;
 }
+a.text-link.title-green {
+  color: #1a515d;
+}
 a.text-link:hover {
   font-weight: bold;
 }
@@ -413,6 +416,9 @@ div#page_publication_donnees .btn-link span.hide::after {
   content: "+";
 }
 
+div#page_integrer ul > li > ul > li {
+  list-style-type: square;
+}
 div#page_integrer .card-header {
   cursor: pointer;
 }

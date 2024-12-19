@@ -155,6 +155,9 @@ h2,h3{
 a.text-link{
   color: $dark_grey;
   cursor: pointer;
+  &.title-green{
+    color: $dark_blue;
+  }
   &:hover{
     font-weight: bold;
   }
@@ -521,6 +524,9 @@ div#page_publication_donnees{
 
 //PAGE : PUBLICATION -----------------
 div#page_integrer{
+  ul>li>ul>li{
+    list-style-type: square;
+  }
   .card-header {
     cursor: pointer;
   }
