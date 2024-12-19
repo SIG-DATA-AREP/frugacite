@@ -187,6 +187,142 @@
                      <p>
                       Les métriques locales se concentrent sur chaque élément du réseau (nœuds ou liens) et permettent d’identifier les zones prioritaires à préserver ou à restaurer pour maintenir la connectivité. 
                      </p>
+                     <ul>
+                      <li>
+                        <b>Flux d’interaction (IF) : </b>
+                        <ul>
+                          <li>
+                            <b>Calcul :</b> Évalue le potentiel d’interaction d’une tâche d’habitat (nœud) avec toutes les autres tâches du réseau. Elle dépend de la capacité des tâches (ex :par défaut : la surface de la tâche) et de leur proximité.
+                          </li>
+                          <li>
+                            <b>Interprétation :</b> Une tâche avec une valeur IF élevée est fortement connectée aux taches voisines et a elle-même une forte capacité. Elle représente le « cœur du réseau ».
+                          </li>
+                          <li>
+                            <b>Application :</b> Utile pour identifier les zones centrales du réseau à préserver dans le cadre de projets locaux ou pour prioriser des actions de conservation. 
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <b>Indice de centralité intermédiaire (BC) : </b>
+                        <ul>
+                          <li>
+                            <b>Calcul :</b> Mesure la fréquence à laquelle une tâche ou un lien est traversé par les chemins reliant les autres tâches d’habitat. 
+                          </li>
+                          <li>
+                            <b>Interprétation :</b> Une valeur BC élevée désigne un connecteur stratégique ou « passage obligé » du réseau, même si la tâche a une faible capacité (rôle de stepping-stone).
+                          </li>
+                          <li>
+                            <b>Application :</b> Particulièrement pertinent pour planifier des passages à faune ou identifier des corridors critiques dans un réseau fragmenté.  
+                          </li>
+                        </ul>
+                      </li>
+                     </ul>
+                     <p>
+                        <b>Métriques locales particulières – Les Delta-métriques :</b> évaluer la contribution à la connectivité globale 
+                     </p>
+                     <p>
+                        Les Delta-métriques permettent d’aller plus loin dans l’évaluation de la connectivité en mesurant la perte globale qui serait engendrée par la suppression d’un élément du réseau. Elles sont particulièrement utiles pour hiérarchiser les tâches et les corridors. 
+                     </p>
+                     <ul>
+                        <li>
+                            <b>Delta-PC (dPC) :</b>
+                            <ul>
+                              <li>
+                                <b>Calcul :</b> Indique la perte de connectivité globale (exprimée en pourcentage) si un élément (tâche ou lien) est supprimé du réseau. 
+                              </li>
+                              <li>
+                                <b>Interprétation :</b> Plus la valeur de dPC est élevée, plus la tâche joue un rôle important pour la connectivité globale. 
+                              </li>
+                              <li>
+                                <b>Application :</b> Idéal pour hiérarchiser les tâches d’habitat et les corridors à préserver dans une démarche de conservation.  
+                              </li>
+                            </ul>
+                        </li>
+                        <li>
+                          <b>Delta-PC décomposé : </b>
+                          <li>
+                            <b>Calcul :</b> Décompose la valeur de dPC en trois fractions pour préciser la nature de la contribution :
+                            <ul>
+                              <li><b>dPCarea :</b> Variation due à la capacité de la tâche (sa taille ou qualité).</li>
+                              <li><b>dPCflux :</b> Variation due à la perte des connexions entre la tâche et ses voisines. </li>
+                              <li><b>dPCconnector :</b> Variation due au rôle de connecteur de la tâche dans le réseau (importance comme passage stratégique). </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <b>Interprétation :</b> Cette décomposition permet de comprendre pourquoi une tâche est importante pour la connectivité : est-ce par sa taille, par ses connexions ou par son rôle de liaison ?
+                          </li>
+                          <li>
+                            <b>Application :</b> Utile pour des projets nécessitant une priorisation fine des actions de conservation ou de restauration.
+                          </li>
+                        </li>
+                     </ul>
+                     <p>
+                      <b>Choisir la bonne métrique selon le projet :</b>
+                      <ul>
+                        <li>Pour évaluer l’impact global d’un aménagement à grande échelle : privilégier les métriques globales (PC, EC).</li>
+                        <li>Pour identifier les éléments stratégiques du réseau à préserver ou restaurer : utiliser les métriques locales (IF, BC). </li>
+                        <li>Pour hiérarchiser les tâches ou corridors en fonction de leur rôle dans la connectivité globale : recourir aux Delta-métriques (dPC et dPC décomposé).</li>
+                      </ul>
+                    </p>
+                    <p>
+                      En fonction de l’échelle du projet, de sa phase et des enjeux identifiés en matière de biodiversité, une utilisation combinée de ces métriques est possible afin de réaliser une analyse complète de la connectivité écologique. 
+                    </p>
+                    <p>
+                      Ces métriques peuvent être représentées de manière cartographique afin de faciliter leur compréhension et hiérarchiser les éléments du réseau écologique dans le contexte d’un projet. Même si Graphab propose déjà un certain nombre de représentations, pour compléter l’analyse, il est possible d’éditer des cartographies plus fines adaptées de Graphab avec des outils SIG.  
+                    </p>
+                    <p>
+                      La cartographie peut être un support de discussion entre maîtres d'ouvrage, collectivités et acteurs locaux pour : 
+                      <ul>
+                        <li>Identifier les patches d’habitats à préserver ou à recréer car situés dans le périmètre projet </li>
+                        <li>Discerner des actions communes à mener en faveur des liens et habitats écologiques selon la compatibilité des stratégies et des calendriers projets des MOA.</li>
+                        <li>Échanger sur les potentiels conflits d’usages entre les enjeux de biodiversité et ceux des autres éléments programmatiques du projet.  </li>
+                        <li>Un soin particulier doit être apporté à la qualité et la convivialité graphique du document, qui pourra servir d’outil de médiation et d’aide à la décision entre des parties pas toutes expertes en écologie. </li>
+                      </ul>
+                    </p>
+                    <p>
+                      Elle est un outil d’aide à la décision au service du Maître d’Ouvrage pour : 
+                      <ul>
+                        <li>Comparer l’impact de différents scénarii d’aménagement sur le réseau écologique des espèces considérées.</li>
+                        <li>Sélectionner les scénarii les plus vertueux pour favoriser la connectivité écologique. </li>
+                        <li>Identifier les zones à préserver et simuler celles sur lesquelles proposer des dispositifs de connectivité écologique pour améliorer la connectivité dans le cadre du projet. </li>
+                        <li>Intégrer ces zones à la programmation urbaine et architecturale comme à sacraliser à aménager pour maximiser la biodiversité avec les objectifs « préserver, restaurer, améliorer ».</li>
+                      </ul>
+                    </p>
+                    <p>
+                      La carte ci-dessous est produite avec le plugin Graphab dans QGIS. Elle illustre les corridors écologiques. 
+                    </p>
+                    <!-- <img> #Slider méthodologie  -->
+                     <p>
+                      Exemple de clés de lecture sur la cartographie ci-dessus : 
+                      <ul>
+                        <li>Le corridor représente les passages privilégiés de l’espèce, le chevreuil européen, lors de leurs déplacements hors de l’habitat.</li>
+                        <li>Pour autant, l’espèce considérée, a également été observé à différents endroits du territoire autour de la gare d’Epônes-Mézière. Il est possible de compléter l’analyse en prenant en compte ces observations.</li>
+                        <li>Un projet se situant sur le trajet d’un corridor présente de grands risques d’impacter le cycle de vie et les possibilités de déplacement du chevreuil. De la même manière, la présence du chevreuil sur le site du projet pourrait être problématique pour son exploitation.</li>
+                        <li>
+                          Ces constats permettent de guider les réflexions sur les opportunités d’amélioration ou d’évitement des impacts : mise en place de dispositifs de connectivité écologique, modification ou déplacement du site du projet. (Lien vers le chapitre guide de Laure) 
+                        </li>
+                      </ul>
+                     </p>
+                     <h6 class="accueil-color_green">Etape 5 : Participation des parties prenantes </h6>
+                     <p>
+                      La complexité du sujet de la biodiversité dans les projets plaide fortement pour la mise en place de démarches participatives et collaboratives afin de convaincre et mobiliser les acteurs en présence de la pertinence des arbitrages qui seront réalisés.
+                      <ul>
+                        <li>
+                          Ateliers participatifs et co-construction des modèles
+                          <ul>
+                            <li>La recherche souligne l’importance d’inclure les acteurs locaux dans les processus de modélisation. Cela est essentiel pour adapter les résultats aux réalités locales. Ces ateliers permettent d’enrichir la méthodologie grâce aux retours des parties prenantes, comme cela a été fait lors de l’atelier participatif sur le choix des espèces dans le cadre du projet de recherche Frugacité.</li>
+                            <li>Pour les opérationnels, organiser de tels ateliers peut s’avérer utile pour ajuster les projets en fonction des spécificités locales, notamment en incluant des associations. Ces ateliers permettront de croiser les regards et les contraintes des différentes parties prenantes sur le projet : exploitant du site, écologues, concepteurs... L’atelier permet d’ouvrir le dialogue entre ces acteurs afin de créer une vision commune sur une thématique donnée comme : la perception de la biodiversité sur le site du projet, le choix des espèces à inclure dans la réflexion, les aménagements adaptés, etc.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          Approche collaborative pour les gares
+                          <ul>
+                            <li>Pour chaque type de gare, l’implication des parties prenantes locales est essentielle afin de garantir que les choix d’aménagement (ex. corridors, infrastructures vertes) répondent aux besoins à la fois des espèces locales, des attentes sociales et des contraintes des usagers (gestionnaires & voyageurs). </li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <!-- <img> #Illustration : schéma atelier 1    -->
+                     </p>
                 </div>
               </div>
             </div>
