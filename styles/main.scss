@@ -32,25 +32,25 @@ $light_opacity: 20%;
 h1{
   font-family: $arep-font-family;
   // font-size: 99px; // To much big ?
-  font-size: 50px;
+  font-size: 32px;
   text-transform: uppercase;
 }
 h2{
   font-family: $arep-font-family;
   // font-size: 39px; // To much big ?
-  font-size: 36px;
+  font-size: 28px;
 }
 h3{
   font-family: $arep-font-family;
   // font-size: 35px; //  To much big ?
-  font-size: 32px;
+  font-size: 24px;
 }
 
 
 /*PROJECT VARIBLES*/
 
 p,i,b,li,label{
-  $project-text-font-size : calc($text-font-size - 3px);
+  $project-text-font-size : calc($text-font-size - 6px); //17px
   font-family: $arep-font-family;
   font-size: $project-text-font-size; // Makes 1rem
 }
