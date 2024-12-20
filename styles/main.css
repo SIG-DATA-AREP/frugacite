@@ -30,7 +30,7 @@ html {
 body {
   font-family: "lato regular", sans-serif;
   font-size: 23px;
-  margin: 0;
+  margin: 0 9em !important;
   padding: 0 0;
   box-sizing: border-box;
 }
