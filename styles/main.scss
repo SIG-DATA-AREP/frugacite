@@ -2,7 +2,8 @@
 
 //TYPOGRAPHY
 $arep-font-family: "lato regular", sans-serif;
-$text-font-size: 23px;
+//$text-font-size: 23px;
+$text-font-size: 16px;
 
 //COLORS
 $white: #ffffff;
@@ -32,18 +33,18 @@ $light_opacity: 20%;
 h1{
   font-family: $arep-font-family;
   // font-size: 99px; // To much big ?
-  font-size: 50px;
+  font-size: 56px;
   text-transform: uppercase;
 }
 h2{
   font-family: $arep-font-family;
   // font-size: 39px; // To much big ?
-  font-size: 36px;
+  font-size: 48px;
 }
 h3{
   font-family: $arep-font-family;
   // font-size: 35px; //  To much big ?
-  font-size: 32px;
+  font-size: 36px;
 }
 
 
