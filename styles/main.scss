@@ -77,7 +77,7 @@ html {
 body {
   font-family: $arep-font-family;
   font-size: $text-font-size; // Makes 1rem
-  margin: 0;
+  margin: 0 4rem; /* Adds 4rem margin to the left and right */
   padding: 0 0;
   box-sizing: border-box;
 }
