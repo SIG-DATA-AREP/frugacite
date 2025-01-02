@@ -35,6 +35,12 @@ body {
   box-sizing: border-box;
 }
 
+img {
+  max-width: 80%; /* Images will take up at most 80% of the page width */
+  margin: 0 auto; /* Center the images */
+  display: block; /* Ensures the centering works */
+}
+
 header {
   background: #ffffff;
   color: #212121;
