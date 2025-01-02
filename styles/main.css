@@ -394,18 +394,16 @@ div#page_publication_donnees h1, div#page_publication_donnees h2, div#page_publi
 
 /* Default state - Sections closed on the publications page */
 div#page_publication_donnees .collapse {
-  height: 0;
-  visibility: hidden;
-  overflow: hidden;
+  display: none;  /* Hide collapsible content by default */
   opacity: 0;
-  transition: opacity 0.3s ease, height 0.3s ease;
+  transition: opacity 0.3s ease, display 0s ease 0.3s; /* Add delay for smooth transition */
 }
 
 /* Expanded state when the section is toggled open */
 div#page_publication_donnees .collapse.show {
-  height: auto;
-  visibility: visible;
+  display: block; /* Show the content when 'show' class is added */
   opacity: 1;
+  transition: opacity 0.3s ease, display 0s ease;
 }
 
 /* For the buttons or links that trigger the collapse/expand on publications page */
