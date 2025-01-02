@@ -595,10 +595,10 @@ div#page_ressources{
       text-align: right;
       transition: transform 0.3s ease;
       &::after{
-        content: "-";
+        content: "+";
       }
       &.hide::after{
-        content: "+";
+        content: "-";
       }
     }
   }
