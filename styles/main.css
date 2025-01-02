@@ -508,10 +508,10 @@ div#page_ressources .btn-link span {
   transition: transform 0.3s ease;
 }
 div#page_ressources .btn-link span::after {
-  content: "-";
+  content: "+";
 }
 div#page_ressources .btn-link span.hide::after {
-  content: "+";
+  content: "-";
 }
 
 div#page_contact form {
