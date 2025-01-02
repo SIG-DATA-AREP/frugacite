@@ -198,7 +198,7 @@ $(document).ready(function () {
     }
   );
   
-  // Sélection de tous les sliders 03  
+  // Sélection de tous les sliders 04  
   $("#page_methodologie_resultats .mapSliderContainer.04 .map_slider").each(
     function () {
       const slider = $("#page_methodologie_resultats .mapSliderContainer.04"); // Instance du slider actuel
