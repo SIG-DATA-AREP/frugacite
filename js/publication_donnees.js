@@ -1,30 +1,28 @@
 $(document).ready(function () {
-  // TOGGLE FOR CARD HEADER (toggle collapsible sections)
+  // TOGGLE FOR CARD HEADER
   $(".card-header").on("click", function () {
-    var content = $(this).next(".collapse");  // Get the collapsible content that follows the card header
-    var btnSpan = $(this).find("button span");  // Get the span inside the button (to toggle + / -)
+    var span = $(this).find(".btn span"); // Get the span inside the button
 
-    // Toggle the visibility of the collapsible content
-    content.toggleClass("show");  // This will toggle the 'show' class to expand/collapse the section
-
-    // Toggle the hide class on the span element for the + / - icon
-    if (content.hasClass("show")) {
-      btnSpan.addClass("hide");  // Show "-" when expanded
+    // Check if the collapse content is currently expanded
+    if ($(this).next(".collapse").hasClass("show")) {
+      // If expanded, add the 'hide' class to show the "-" symbol
+      span.addClass("hide");
     } else {
-      btnSpan.removeClass("hide");  // Show "+" when collapsed
+      // If collapsed, remove the 'hide' class to show the "+" symbol
+      span.removeClass("hide");
     }
   });
 
-  // Initialize all sections to be collapsed with the correct + icon
+  // Initialize all sections to be collapsed with the "+" symbol
   $(".card-header").each(function() {
+    var span = $(this).find(".btn span");  // Get the span inside the button
     var content = $(this).next(".collapse");
-    var btnSpan = $(this).find("button span");
 
-    // Make sure the icon is "+" for collapsed sections (add the hide class only for expanded sections)
+    // Make sure the icon is "+" for collapsed sections
     if (!content.hasClass("show")) {
-      btnSpan.removeClass("hide");
+      span.removeClass("hide");  // "+" when collapsed
     } else {
-      btnSpan.addClass("hide");
+      span.addClass("hide");  // "-" when expanded
     }
   });
 });
