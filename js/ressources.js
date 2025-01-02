@@ -1,3 +1,4 @@
+$(document).ready(function () {
   // TOOGLE FOR CARD HEADER
   $(".card-header").on("click", function () {
     if ($(this).find(".btn span").hasClass("hide"))
