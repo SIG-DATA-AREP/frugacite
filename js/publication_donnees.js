@@ -1,11 +1,8 @@
 $(document).ready(function () {
   // TOGGLE FOR CARD HEADER (toggle collapsible sections)
-  $(".toggle-collapse").on("click", function () {
-    var content = $(this).next(".collapse");  // Get the collapsible content that follows the card header
+  $(".btn[data-bs-toggle='collapse']").on("click", function () {
+    var content = $($(this).attr("data-bs-target"));  // Get the collapsible content
     var btnSpan = $(this).find("span");  // Get the span inside the button (to toggle + / -)
-
-    // Toggle the visibility of the collapsible content
-    content.toggleClass("show");  // This will toggle the 'show' class to expand/collapse the section
 
     // Toggle the + / - icon based on visibility
     if (content.hasClass("show")) {
