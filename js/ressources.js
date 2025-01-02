@@ -5,4 +5,4 @@ $(document).ready(function () {
       $(this).find(".btn span").removeClass("hide");
     else $(this).find(".btn span").addClass("hide");
   });
-});
+});  
