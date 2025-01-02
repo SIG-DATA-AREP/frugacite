@@ -130,6 +130,8 @@ a.text-link:hover {
   width: 100%;
   height: auto;
   overflow: hidden;
+  max-width: 80%; /* Restrict slider container to 80% of the page width */
+  margin: 0 auto; /* Center the slider on the page */
 }
 .map_slider .map-main-image {
   width: calc(100% - 100px);
