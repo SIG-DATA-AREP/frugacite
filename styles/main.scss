@@ -480,10 +480,10 @@ div#page_methodologie_resultats{
       text-align: right;
       transition: transform 0.3s ease;
       &::after{
-        content: "-";
+        content: "+";
       }
       &.hide::after{
-        content: "+";
+        content: "-";
       }
     }
   }
@@ -514,10 +514,10 @@ div#page_publication_donnees{
       text-align: right;
       transition: transform 0.3s ease;
       &::after{
-        content: "-";
+        content: "+";
       }
       &.hide::after{
-        content: "+";
+        content: "-";
       }
     }
   }
@@ -556,10 +556,10 @@ div#page_integrer{
       text-align: right;
       transition: transform 0.3s ease;
       &::after{
-        content: "-";
+        content: "+";
       }
       &.hide::after{
-        content: "+";
+        content: "-";
       }
     }
   }
@@ -571,7 +571,7 @@ div#page_integrer{
   }
 }
 
-//PAGE : CONTACT -----------------
+//PAGE : RESSOURCES -----------------
 div#page_ressources{
   ul>li>ul>li{
     list-style-type: square;
