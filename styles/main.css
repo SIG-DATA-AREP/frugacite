@@ -387,58 +387,33 @@ div#page_methodologie_resultats .btn-link span.hide::after {
   content: "-";
 }
 
-/* Ensure heading margin is retained */
 div#page_publication_donnees h1, div#page_publication_donnees h2, div#page_publication_donnees h3 {
   margin-top: 2rem !important;
 }
-
-/* Default state - Sections closed on the publications page */
-div#page_publication_donnees .collapse {
-  display: none;  /* Hide collapsible content by default */
-  opacity: 0;
-  transition: opacity 0.3s ease, display 0s ease 0.3s; /* Add delay for smooth transition */
+div#page_publication_donnees .card-header {
+  cursor: pointer;
 }
-
-/* Expanded state when the section is toggled open */
-div#page_publication_donnees .collapse.show {
-  display: block; /* Show the content when 'show' class is added */
-  opacity: 1;
-  transition: opacity 0.3s ease, display 0s ease;
-}
-
-/* For the buttons or links that trigger the collapse/expand on publications page */
 div#page_publication_donnees .btn-link {
   text-decoration: none;
   color: #1d1d1b;
   width: 100%;
   text-align: left;
-  cursor: pointer;
 }
-
 div#page_publication_donnees .btn-link h5 {
   margin: 0;
   float: left;
   width: 95%;
 }
-
 div#page_publication_donnees .btn-link span {
   width: 5%;
   text-align: right;
   transition: transform 0.3s ease;
 }
-
-/* Toggle button state for the publications page */
 div#page_publication_donnees .btn-link span::after {
   content: "+";
 }
-
 div#page_publication_donnees .btn-link span.hide::after {
   content: "-";
-}
-
-/* Card header for publications page (for clickable sections) */
-div#page_publication_donnees .card-header {
-  cursor: pointer;
 }
 
 div#page_integrer li {
