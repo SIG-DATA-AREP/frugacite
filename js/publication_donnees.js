@@ -9,9 +9,19 @@ $(document).ready(function () {
 
     // Toggle the + / - icon based on visibility
     if (content.hasClass("show")) {
-      btnSpan.removeClass("hide");  // Show "-" (expanded state)
+      btnSpan.text("-");  // Show "-" when expanded
     } else {
-      btnSpan.addClass("hide");  // Show "+" (collapsed state)
+      btnSpan.text("+");  // Show "+" when collapsed
+    }
+  });
+
+  // Set initial state (optional)
+  $(".card-header").each(function() {
+    var content = $(this).next(".collapse");
+    var btnSpan = $(this).find(".btn span");
+
+    if (!content.hasClass("show")) {
+      btnSpan.text("+");  // Make sure the icon is "+" for collapsed sections
     }
   });
 });
