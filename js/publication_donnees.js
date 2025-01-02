@@ -7,11 +7,11 @@ $(document).ready(function () {
     // Toggle the visibility of the collapsible content
     content.toggleClass("show");  // This will toggle the 'show' class to expand/collapse the section
 
-    // Toggle the + / - icon based on visibility
+    // Toggle the hide class on the span element for the + / - icon
     if (content.hasClass("show")) {
-      btnSpan.text("-");  // Show "-" when expanded
+      btnSpan.addClass("hide");  // Show "-" when expanded
     } else {
-      btnSpan.text("+");  // Show "+" when collapsed
+      btnSpan.removeClass("hide");  // Show "+" when collapsed
     }
   });
 
@@ -20,9 +20,11 @@ $(document).ready(function () {
     var content = $(this).next(".collapse");
     var btnSpan = $(this).find("button span");
 
-    // Make sure the icon is "+" for collapsed sections
+    // Make sure the icon is "+" for collapsed sections (add the hide class only for expanded sections)
     if (!content.hasClass("show")) {
-      btnSpan.text("+");
+      btnSpan.removeClass("hide");
+    } else {
+      btnSpan.addClass("hide");
     }
   });
 });
