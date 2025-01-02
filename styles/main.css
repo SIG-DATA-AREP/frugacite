@@ -381,10 +381,10 @@ div#page_methodologie_resultats .btn-link span {
   transition: transform 0.3s ease;
 }
 div#page_methodologie_resultats .btn-link span::after {
-  content: "-";
+  content: "+";
 }
 div#page_methodologie_resultats .btn-link span.hide::after {
-  content: "+";
+  content: "-";
 }
 
 /* Ensure heading margin is retained */
@@ -473,10 +473,10 @@ div#page_integrer .btn-link span {
   transition: transform 0.3s ease;
 }
 div#page_integrer .btn-link span::after {
-  content: "-";
+  content: "+";
 }
 div#page_integrer .btn-link span.hide::after {
-  content: "+";
+  content: "-";
 }
 div#page_integrer div.note {
   padding: 0.5em;
