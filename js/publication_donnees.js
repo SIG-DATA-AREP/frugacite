@@ -20,9 +20,11 @@ $(document).ready(function () {
     var content = $(this).next(".collapse");
     var btnSpan = $(this).find(".btn span");
 
-    // Make sure the icon is "+" for collapsed sections
+    // Initially set "+" if the section is collapsed, otherwise set "-"
     if (!content.hasClass("show")) {
-      btnSpan.text("+");
+      btnSpan.text("+");  // Set "+" for collapsed sections
+    } else {
+      btnSpan.text("-");  // Set "-" for expanded sections
     }
   });
 });
