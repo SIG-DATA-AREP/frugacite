@@ -15,13 +15,14 @@ $(document).ready(function () {
     }
   });
 
-  // Set initial state (optional)
+  // Initialize all sections to be collapsed with the correct + icon
   $(".card-header").each(function() {
     var content = $(this).next(".collapse");
     var btnSpan = $(this).find(".btn span");
 
+    // Make sure the icon is "+" for collapsed sections
     if (!content.hasClass("show")) {
-      btnSpan.text("+");  // Make sure the icon is "+" for collapsed sections
+      btnSpan.text("+");
     }
   });
 });
