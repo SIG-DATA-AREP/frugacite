@@ -3,7 +3,7 @@
 //TYPOGRAPHY
 $arep-font-family: "lato regular", sans-serif;
 //$text-font-size: 23px;
-$text-font-size: 16px;
+$text-font-size: 17px;
 
 //COLORS
 $white: #ffffff;
@@ -51,9 +51,9 @@ h3{
 /*PROJECT VARIBLES*/
 
 p,i,b,li,label{
-  $project-text-font-size : calc($text-font-size - 6px); //17px
+  // $project-text-font-size : calc($text-font-size - 6px); //17px
   font-family: $arep-font-family;
-  font-size: $project-text-font-size; // Makes 1rem
+  font-size: $text-font-size; // Makes 1rem
 }
 
 //COLORS
@@ -374,7 +374,7 @@ div#page_equipe{
   }
 
   .team-grid {
-    $card_height:15rem;
+    $card_height:20rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax($card_height, 1fr));
     gap: 3rem;
