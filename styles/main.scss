@@ -64,6 +64,7 @@ $couleur_logo: #4db1a8;
 $dropdownMmenu-marginTop: 1rem;
 $logo_height: 3rem;
 $logo_partener_height: 3rem;
+$logo_arep_footer_height: 1.8rem;
 $mobile-dropdownMmenu-marginTop: -0.5rem;
 $mobile-nav-marginTop: calc(-1 *($logo_height - 1rem ));
 
@@ -651,7 +652,7 @@ footer {
     }
     
     img.logo{
-      height: calc($logo_height);
+      height: calc($logo_arep_footer_height);
     }
   
     .partner{
@@ -666,20 +667,20 @@ footer {
     }
 
     .cm{
-      height: calc($logo_partener_height - 1.5rem) !important;
+      height: calc($logo_partener_height - 1.5rem);
       margin-top: 1rem;
     }
     .thema{
-      height: calc($logo_partener_height - 1.5rem) !important;
+      height: calc($logo_partener_height - 1.5rem);
       margin-top: 1rem;
     }
     .univ{
-      height: calc($logo_partener_height - 1.5rem) !important;
+      height: calc($logo_partener_height - 1.5rem);
       margin-top: 1rem;
     }
     .sorbonne{
-      height: calc($logo_partener_height - 0.5rem) !important;
-      margin-top: 1rem;
+      height: calc($logo_partener_height - 0.5rem);
+      // margin-top: 0.5rem;
     }
 
     .image-container {
