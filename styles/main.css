@@ -245,6 +245,7 @@ a.text-link:hover {
 
 div#page_accueil img {
   max-width: 100%;
+  margin: 2rem;
 }
 div#page_accueil img#timeline-legend {
   margin-top: 2em;
@@ -417,6 +418,9 @@ div#page_publication_donnees .btn-link span.hide::after {
   content: "-";
 }
 
+div#page_integrer img {
+  max-width: 80%;
+}
 div#page_integrer li {
   margin-top: 1em;
 }
@@ -429,36 +433,16 @@ div#page_integrer ul > li > ul > li {
 div#page_integrer ul > li > ul > li ul > li {
   list-style-type: square;
 }
-div#page_integrer .card-header {
-  cursor: pointer;
-}
-div#page_integrer .btn-link {
-  text-decoration: none;
-  color: #1d1d1b;
-  width: 100%;
-  text-align: left;
-}
-div#page_integrer .btn-link h5 {
-  margin: 0;
-  float: left;
-  width: 95%;
-}
-div#page_integrer .btn-link span {
-  width: 5%;
-  text-align: right;
-  transition: transform 0.3s ease;
-}
-div#page_integrer .btn-link span::after {
-  content: "+";
-}
-div#page_integrer .btn-link span.hide::after {
-  content: "-";
-}
 div#page_integrer div.note {
   padding: 0.5em;
   background-color: rgba(225, 80, 81, 0.4);
   border-radius: 0.2em;
   margin-bottom: 1em;
+}
+
+div#page_cons_methodo img {
+  max-width: 80%;
+  margin: 2rem auto;
 }
 
 div#page_ressources ul > li > ul > li {

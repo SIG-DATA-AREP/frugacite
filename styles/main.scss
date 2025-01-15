@@ -319,6 +319,7 @@ a.text-link{
 div#page_accueil{
   img{
     max-width: 100%;
+    margin: 2rem;
     &#timeline-legend{
       margin-top: 2em;
       width: 80%;
@@ -527,6 +528,9 @@ div#page_publication_donnees{
 
 //PAGE : intigrer -----------------
 div#page_integrer{
+  img{
+    max-width: 80%;
+  }
   li{
     margin-top: 1em;
   }
@@ -539,32 +543,7 @@ div#page_integrer{
       list-style-type: square;
     }
   }
-  .card-header {
-    cursor: pointer;
-  }
   
-  .btn-link {
-    text-decoration: none;
-    color: $black;
-    width: 100%;
-    text-align: left;
-    h5 {
-      margin: 0;
-      float: left;
-      width: 95%;
-    }
-    span {
-      width: 5%;
-      text-align: right;
-      transition: transform 0.3s ease;
-      &::after{
-        content: "+";
-      }
-      &.hide::after{
-        content: "-";
-      }
-    }
-  }
   div.note{
     padding: .5em;
     background-color: rgba($coral, 0.4);
@@ -572,7 +551,13 @@ div#page_integrer{
     margin-bottom: 1em;
   }
 }
-
+//PAGE : page_cons_methodo -----------------
+div#page_cons_methodo{
+  img{
+    max-width: 80%;
+    margin: 2rem auto;
+  }
+}
 //PAGE : RESSOURCES -----------------
 div#page_ressources{
   ul>li>ul>li{
