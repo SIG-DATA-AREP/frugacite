@@ -438,7 +438,11 @@ div#page_equipe{
         text-align: center;
         p{
           font-family: $arep-font-family;
-          font-size: 0.6rem;
+          font-size: 1em;
+          max-height: 90%;
+          overflow-y: auto;
+          scrollbar-width: thin;
+          scrollbar-color: $white rgba($black, 0.8);
         }
       }
   

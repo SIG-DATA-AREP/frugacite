@@ -352,7 +352,11 @@ div#page_equipe .team-grid .card .card-overlay {
 }
 div#page_equipe .team-grid .card .card-overlay p {
   font-family: "lato regular", sans-serif;
-  font-size: 0.6rem;
+  font-size: 1em;
+  max-height: 90%;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ffffff rgba(29, 29, 27, 0.8);
 }
 div#page_equipe .team-grid .card:hover .card-overlay {
   opacity: 1;
