@@ -216,9 +216,10 @@ a.text-link:hover {
   text-align: center;
   background-color: #e15051;
   z-index: 11;
-  width: 2em;
-  max-width: 2em;
+  width: 1.5em;
+  max-width: 1.5em;
   color: #ffffff;
+  font-size: 2rem;
 }
 .mapSliderContainer td.slider-nav.disabled {
   background-color: #9d9d9c;
@@ -229,7 +230,9 @@ a.text-link:hover {
   border-radius: 1em 0 0 1em;
 }
 .mapSliderContainer td.slider-nav#prevBtn span::after {
-  content: "<";
+  content: "➧";
+  rotate: 180deg;
+  display: inline-block;
 }
 .mapSliderContainer td.slider-nav#prevBtn:hover:not(.disabled) {
   padding-right: 0.2em;
@@ -238,7 +241,7 @@ a.text-link:hover {
   border-radius: 0 1em 1em 0;
 }
 .mapSliderContainer td.slider-nav#nextBtn span::after {
-  content: ">";
+  content: "➧";
 }
 .mapSliderContainer td.slider-nav#nextBtn:hover:not(.disabled) {
   padding-left: 0.2em;
