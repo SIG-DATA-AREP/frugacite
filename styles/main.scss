@@ -286,28 +286,31 @@ a.text-link{
       width: 2em;
       max-width: 2em;
       color: $white;
+      &.disabled{
+        background-color: $grey;
+        cursor: default;
+        color: #000;
+      }
       &#prevBtn{
         border-radius: 1em 0 0 1em;
-        border-right: 1px $dark_red solid;
         span{
           &::after{
             content: "<";
           }
         }
-        &:hover{
-          border-right: 2px $dark_red solid;
+        &:hover:not(.disabled){
+          padding-right: +0.2em;
         }
       }
       &#nextBtn{
-        border-left: 1px $dark_red solid;
         border-radius: 0 1em 1em 0;
         span{
           &::after{
             content: ">";
           }
         }
-        &:hover{
-          border-left: 2px $dark_red solid;
+        &:hover:not(.disabled){
+          padding-left: +0.2em;
         }
       }
     }
