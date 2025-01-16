@@ -220,6 +220,10 @@ a.text-link:hover {
   right: 100px !important; /* Displayed from the start off-screen */
 }
 
+.mapSliderContainer {
+  width: 80%;
+  margin: 1em auto;
+}
 .mapSliderContainer .slider-navigation {
   text-align: center;
   margin-top: 0.1rem;
