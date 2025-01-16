@@ -1,7 +1,7 @@
 $(document).ready(function () {
   // Select all map sliders
   // Sélection de tous les sliders
-  $("#page_accueil .map_slider").each(function () {
+  $("#page_integrer .map_slider").each(function () {
     const slider = $(this); // Instance du slider actuel
 
     slider.find(".hoverer").on("mouseenter", function () {
@@ -18,7 +18,7 @@ $(document).ready(function () {
     });
 
     // Gestion de la navigation entre les sliders
-    var $sliders = $("#page_accueil .map_slider");
+    var $sliders = $("#page_integrer .map_slider");
     var $prevBtn = $("#prevBtn");
     var $nextBtn = $("#nextBtn");
     var $indicator = $("#sliderIndicator"); // L'élément qui affiche l'indicateur

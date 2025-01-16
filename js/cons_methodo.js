@@ -7,11 +7,11 @@ $(document).ready(function () {
   });
 
   // Sélection de tous les sliders 01
-  $("#page_integrer .mapSliderContainer.01 .map_slider").each(function () {
-    const slider = $("#page_integrer .mapSliderContainer.01"); // Instance du slider actuel
+  $("#page_cons_methodo .mapSliderContainer.01 .map_slider").each(function () {
+    const slider = $("#page_cons_methodo .mapSliderContainer.01"); // Instance du slider actuel
 
     // Gestion de la navigation entre les sliders
-    var $sliders = $("#page_integrer .mapSliderContainer.01 .map_slider");
+    var $sliders = $("#page_cons_methodo .mapSliderContainer.01 .map_slider");
     var $prevBtn = slider.find(".prevBtn");
     var $nextBtn = slider.find(".nextBtn");
     var $indicator = slider.find(".sliderIndicator"); // L'élément qui affiche l'indicateur
@@ -66,11 +66,11 @@ $(document).ready(function () {
     });
   });
   // Sélection de tous les sliders 02
-  $("#page_integrer .mapSliderContainer.02 .map_slider").each(function () {
-    const slider = $("#page_integrer .mapSliderContainer.02"); // Instance du slider actuel
+  $("#page_cons_methodo .mapSliderContainer.02 .map_slider").each(function () {
+    const slider = $("#page_cons_methodo .mapSliderContainer.02"); // Instance du slider actuel
 
     // Gestion de la navigation entre les sliders
-    var $sliders = $("#page_integrer .mapSliderContainer.02 .map_slider");
+    var $sliders = $("#page_cons_methodo .mapSliderContainer.02 .map_slider");
     var $prevBtn = slider.find(".prevBtn");
     var $nextBtn = slider.find(".nextBtn");
     var $indicator = slider.find(".sliderIndicator"); // L'élément qui affiche l'indicateur
@@ -125,11 +125,11 @@ $(document).ready(function () {
     });
   });
   // Sélection de tous les sliders 03
-  $("#page_integrer .mapSliderContainer.03 .map_slider").each(function () {
-    const slider = $("#page_integrer .mapSliderContainer.03"); // Instance du slider actuel
+  $("#page_cons_methodo .mapSliderContainer.03 .map_slider").each(function () {
+    const slider = $("#page_cons_methodo .mapSliderContainer.03"); // Instance du slider actuel
 
     // Gestion de la navigation entre les sliders
-    var $sliders = $("#page_integrer .mapSliderContainer.03 .map_slider");
+    var $sliders = $("#page_cons_methodo .mapSliderContainer.03 .map_slider");
     var $prevBtn = slider.find(".prevBtn");
     var $nextBtn = slider.find(".nextBtn");
     var $indicator = slider.find(".sliderIndicator"); // L'élément qui affiche l'indicateur

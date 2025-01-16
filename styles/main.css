@@ -365,7 +365,8 @@ div#page_equipe .team-grid .card:hover .card-overlay {
 }
 
 div#page_methodologie_resultats img {
-  max-width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
 }
 div#page_methodologie_resultats .card-header {
   cursor: pointer;
