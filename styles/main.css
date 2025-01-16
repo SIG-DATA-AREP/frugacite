@@ -125,35 +125,20 @@ a.text-link:hover {
   height: auto;
   overflow: hidden;
 }
-.map_slider .map-main-image {
-  width: calc(100% - 100px);
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.map_slider .map-main-image.no-right-button {
-  width: 100%;
-}
-.map_slider .map-hover-image {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 .map_slider .map-right-button {
   position: absolute;
+  z-index: 11;
   top: 0;
-  right: 0;
-  width: 100px;
-  height: 100%;
-  background-color: #e15051; /* Coral color */
+  right: 29%;
+  width: 2.5em;
+  height: 2.5em;
+  background-color: #1a515d; /* Coral color */
   pointer-events: auto !important;
   align-items: center;
   color: white;
-  padding-top: 10%;
-  text-align: left;
   cursor: pointer;
-  border: 1px solid #88212c;
+  border: 1px solid #212121;
+  border-radius: 50%;
   transition: background-color 0.5s ease;
 }
 .map_slider .map-right-button p {
@@ -163,11 +148,10 @@ a.text-link:hover {
 .map_slider .map-right-button span {
   display: block;
   text-align: center;
-  margin-top: 200%;
-  font-size: 5rem;
+  font-size: 1.7rem;
 }
 .map_slider .map-right-button span::after {
-  content: "➧";
+  content: "✚";
   white-space: pre;
   display: inline-block; /* Important to allow transform rotation */
   transform: rotate(180deg);
@@ -175,17 +159,17 @@ a.text-link:hover {
 .map_slider .map-right-button span.show::after {
   white-space: pre;
   transition: transform 0.3s ease-in-out;
-  transform: rotate(360deg);
+  transform: rotate(45deg);
 }
 .map_slider .map-right-button:hover {
-  background-color: #D31216; /* Coral color */
+  background-color: #5a7c6e; /* Coral color */
 }
 .map_slider .map-bottom-div {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 15%;
+  height: 20%;
   background-color: rgba(229, 229, 229, 0.95); /* Semi-transparent black */
   color: #1d1d1b;
   display: none; /* Initially hidden */
@@ -207,17 +191,16 @@ a.text-link:hover {
 .map_slider .map-sliding-div {
   position: absolute;
   top: 0;
-  right: -85%; /* Start off-screen from the right */
-  width: 85%;
+  right: -90%; /* Start off-screen from the right */
+  width: 90%;
   height: 100%;
   border-radius: 1em 0 0 1em;
-  box-shadow: -10px 0 10px -5px rgba(157, 157, 156, 0.5);
   background-color: rgba(229, 229, 229, 0.95); /* 95% transparent black */
   z-index: 10;
   transition: right 0.5s ease; /* Animate the 'right' property */
 }
 .map_slider .map-sliding-div.show {
-  right: 100px !important; /* Displayed from the start off-screen */
+  right: 2.5em;
 }
 
 .mapSliderContainer {
