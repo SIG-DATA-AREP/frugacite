@@ -231,7 +231,7 @@ a.text-link{
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 95%;
     height: 25%;
     background-color: rgba(#e5e5e5, 0.95); /* Semi-transparent black */
     color: $black;
@@ -285,18 +285,35 @@ a.text-link{
       z-index: 11;
       width: 2em;
       max-width: 2em;
+      color: $white;
       &#prevBtn{
-        border-right: 1px $dark_red solid;
         border-radius: 1em 0 0 1em;
+        border-right: 1px $dark_red solid;
+        span{
+          &::after{
+            content: "<";
+          }
+        }
+        &:hover{
+          border-right: 2px $dark_red solid;
+        }
       }
       &#nextBtn{
         border-left: 1px $dark_red solid;
         border-radius: 0 1em 1em 0;
+        span{
+          &::after{
+            content: ">";
+          }
+        }
+        &:hover{
+          border-left: 2px $dark_red solid;
+        }
       }
     }
-    // &.slider-content{
-    //   padding-right: -30%;
-    // }
+    &.slider-content{
+      padding-left: 5%;
+    }
   }
 }
 

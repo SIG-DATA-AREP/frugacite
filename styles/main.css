@@ -168,7 +168,7 @@ a.text-link:hover {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 95%;
   height: 25%;
   background-color: rgba(229, 229, 229, 0.95); /* Semi-transparent black */
   color: #1d1d1b;
@@ -218,14 +218,30 @@ a.text-link:hover {
   z-index: 11;
   width: 2em;
   max-width: 2em;
+  color: #ffffff;
 }
 .mapSliderContainer td.slider-nav#prevBtn {
-  border-right: 1px #88212c solid;
   border-radius: 1em 0 0 1em;
+  border-right: 1px #88212c solid;
+}
+.mapSliderContainer td.slider-nav#prevBtn span::after {
+  content: "<";
+}
+.mapSliderContainer td.slider-nav#prevBtn:hover {
+  border-right: 2px #88212c solid;
 }
 .mapSliderContainer td.slider-nav#nextBtn {
   border-left: 1px #88212c solid;
   border-radius: 0 1em 1em 0;
+}
+.mapSliderContainer td.slider-nav#nextBtn span::after {
+  content: ">";
+}
+.mapSliderContainer td.slider-nav#nextBtn:hover {
+  border-left: 2px #88212c solid;
+}
+.mapSliderContainer td.slider-content {
+  padding-left: 5%;
 }
 
 div#page_accueil img {
