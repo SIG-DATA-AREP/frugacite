@@ -188,7 +188,7 @@ a.text-link{
     position: absolute;
     z-index: 11;
     top: 0;
-    right: 20%;
+    right: 0;
     width: 2.5em;
     height: 2.5em;
     background-color: $dark_blue; /* Coral color */
@@ -232,7 +232,7 @@ a.text-link{
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 20%;
+    height: 25%;
     background-color: rgba(#e5e5e5, 0.95); /* Semi-transparent black */
     color: $black;
     display: none; /* Initially hidden */
@@ -240,12 +240,16 @@ a.text-link{
     align-items: center;
     box-shadow: 0 -10px 10px -5px rgba($grey, 0.5);
     p{
-      font-size: 0.85em;
+      font-size: 0.8em;
       max-height: 100%;
       text-align: left;
-      line-height: 1em;
+      line-height: 1.2em;
       cursor: default;
       padding: 1em !important;
+      span{
+        font-size: 0.8em; 
+        font-style: italic; 
+      }
     }
     
     &.show{
@@ -256,17 +260,16 @@ a.text-link{
   .map-sliding-div {
     position: absolute;
     top: 0;
-    right: -90%; /* Start off-screen from the right */
-    width: 90%;
+    right: -100%; /* Start off-screen from the right */
+    width: 100%;
     height: 100%;
     border-radius: 1em 0 0 1em;
-    // box-shadow: -10px 0 10px -5px rgba($grey, 0.5);
     background-color: rgba(#e5e5e5, 0.95); /* 95% transparent black */
     z-index: 10;
     transition: right 0.5s ease; /* Animate the 'right' property */
 
     &.show{
-      right: 2.5em;
+      right: -25%;
     }
   }
 }
@@ -274,28 +277,26 @@ a.text-link{
 .mapSliderContainer{
   width: 80%;
   margin: 1em auto;
-  .slider-navigation {
-    text-align: center;
-    margin-top: 0.1rem;
-    margin-bottom: 1rem;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    span{
-      font-size: 1rem;
-      &.disabled{
-        cursor: default;
-        opacity: 0.5;
+  td{
+    &.slider-nav{
+      cursor: pointer;
+      text-align: center;
+      background-color: $coral;
+      z-index: 11;
+      width: 2em;
+      max-width: 2em;
+      &#prevBtn{
+        border-right: 1px $dark_red solid;
+        border-radius: 1em 0 0 1em;
       }
-      &.prevBtn:not(.disabled):hover{
-        font-weight: bold;
-      }
-      &.nextBtn:not(.disabled):hover{
-        font-weight: bold;
+      &#nextBtn{
+        border-left: 1px $dark_red solid;
+        border-radius: 0 1em 1em 0;
       }
     }
+    // &.slider-content{
+    //   padding-right: -30%;
+    // }
   }
 }
 
