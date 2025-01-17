@@ -20,7 +20,9 @@ $(document).ready(function () {
     // Gestion de la navigation entre les sliders
     var $sliders = $("#page_integrer .map_slider");
     var $prevBtn = $("#prevBtn");
+    var $bottom_prevBtn = $("#bottom-prevBtn");
     var $nextBtn = $("#nextBtn");
+    var $bottom_nextBtn = $("#bottom-nextBtn");
     var $indicator = $("#sliderIndicator"); // L'élément qui affiche l'indicateur
     var total = $sliders.length;
     var currentIndex = 0; // Commence au premier slider
@@ -43,15 +45,19 @@ $(document).ready(function () {
       // Gestion de l'état du bouton "Précédent"
       if (currentIndex === 0) {
         $prevBtn.addClass("disabled");
+        $bottom_prevBtn.addClass("disabled");
       } else {
         $prevBtn.removeClass("disabled");
+        $bottom_prevBtn.removeClass("disabled");
       }
 
       // Gestion de l'état du bouton "Suivant"
       if (currentIndex === $sliders.length - 1) {
         $nextBtn.addClass("disabled");
+        $bottom_nextBtn.addClass("disabled");
       } else {
         $nextBtn.removeClass("disabled");
+        $bottom_nextBtn.removeClass("disabled");
       }
 
       // Mise à jour de l'indicateur "currentIndex/total"
@@ -64,8 +70,20 @@ $(document).ready(function () {
         showSlider(currentIndex);
       }
     });
+    $bottom_prevBtn.click(function () {
+      if (currentIndex > 0) {
+        currentIndex--;
+        showSlider(currentIndex);
+      }
+    });
 
     $nextBtn.click(function () {
+      if (currentIndex < $sliders.length - 1) {
+        currentIndex++;
+        showSlider(currentIndex);
+      }
+    });
+    $bottom_nextBtn.click(function () {
       if (currentIndex < $sliders.length - 1) {
         currentIndex++;
         showSlider(currentIndex);

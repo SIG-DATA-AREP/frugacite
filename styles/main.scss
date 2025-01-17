@@ -295,7 +295,6 @@ a.text-link{
       color: $coral;
       font-size: 2rem;
       &.disabled{
-        // background-color: $grey;
         cursor: default;
         color: $grey;
       }
@@ -326,6 +325,14 @@ a.text-link{
     }
     &.slider-content{
       padding-left: 5%;
+    }
+    .slider-navigation{
+      text-align: center;
+      cursor: pointer;
+      span.disabled{
+        cursor: default;
+        color: $grey;
+      }
     }
   }
 }

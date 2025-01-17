@@ -251,6 +251,14 @@ a.text-link:hover {
 .mapSliderContainer td.slider-content {
   padding-left: 5%;
 }
+.mapSliderContainer td .slider-navigation {
+  text-align: center;
+  cursor: pointer;
+}
+.mapSliderContainer td .slider-navigation span.disabled {
+  cursor: default;
+  color: #9d9d9c;
+}
 
 div#page_accueil img {
   max-width: 100%;
