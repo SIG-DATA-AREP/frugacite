@@ -228,24 +228,24 @@ a.text-link:hover {
   cursor: default;
   color: #9d9d9c;
 }
-.mapSliderContainer td.slider-nav#prevBtn {
+.mapSliderContainer td.slider-nav#prevBtn, .mapSliderContainer td.slider-nav.prevBtn {
   border-radius: 1em 0 0 1em;
 }
-.mapSliderContainer td.slider-nav#prevBtn span::after {
+.mapSliderContainer td.slider-nav#prevBtn span::after, .mapSliderContainer td.slider-nav.prevBtn span::after {
   content: "➧";
   rotate: 180deg;
   display: inline-block;
 }
-.mapSliderContainer td.slider-nav#prevBtn:hover:not(.disabled) {
+.mapSliderContainer td.slider-nav#prevBtn:hover:not(.disabled), .mapSliderContainer td.slider-nav.prevBtn:hover:not(.disabled) {
   padding-right: 0.2em;
 }
-.mapSliderContainer td.slider-nav#nextBtn {
+.mapSliderContainer td.slider-nav#nextBtn, .mapSliderContainer td.slider-nav.nextBtn {
   border-radius: 0 1em 1em 0;
 }
-.mapSliderContainer td.slider-nav#nextBtn span::after {
+.mapSliderContainer td.slider-nav#nextBtn span::after, .mapSliderContainer td.slider-nav.nextBtn span::after {
   content: "➧";
 }
-.mapSliderContainer td.slider-nav#nextBtn:hover:not(.disabled) {
+.mapSliderContainer td.slider-nav#nextBtn:hover:not(.disabled), .mapSliderContainer td.slider-nav.nextBtn:hover:not(.disabled) {
   padding-left: 0.2em;
 }
 .mapSliderContainer td.slider-content {
@@ -382,8 +382,12 @@ div#page_equipe .team-grid .card:hover .card-overlay {
 }
 
 div#page_methodologie_resultats img {
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto;
+}
+div#page_methodologie_resultats img.recenter {
+  display: block;
+  margin: 2rem auto;
 }
 div#page_methodologie_resultats .card-header {
   cursor: pointer;

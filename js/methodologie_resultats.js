@@ -197,12 +197,18 @@ $(document).ready(function () {
       });
     }
   );
-  
-  // Sélection de tous les sliders 04  
+
+  // Sélection de tous les sliders 04
   $("#page_methodologie_resultats .mapSliderContainer.04 .map_slider").each(
     function () {
       const slider = $("#page_methodologie_resultats .mapSliderContainer.04"); // Instance du slider actuel
-  
+      slider.find(".hoverer").on("mouseenter", function () {
+        slider.find(".map-bottom-div").addClass("show");
+      });
+      slider.find(".hoverer").on("mouseleave", function () {
+        slider.find(".map-bottom-div").removeClass("show");
+      });
+
       // Gestion de la navigation entre les sliders
       var $sliders = $(
         "#page_methodologie_resultats .mapSliderContainer.04 .map_slider"
@@ -212,11 +218,11 @@ $(document).ready(function () {
       var $indicator = slider.find(".sliderIndicator"); // L'élément qui affiche l'indicateur
       var total = $sliders.length;
       var currentIndex = 0; // Commence au premier slider
-  
+
       // Cacher tous les sliders et afficher le premier
       $sliders.hide().eq(currentIndex).show();
       updateButtonState();
-  
+
       function showSlider(index) {
         $sliders.stop(true, true).fadeOut(300);
         $sliders
@@ -226,7 +232,7 @@ $(document).ready(function () {
             updateButtonState();
           });
       }
-  
+
       function updateButtonState() {
         // Gestion de l'état du bouton "Précédent"
         if (currentIndex === 0) {
@@ -234,25 +240,25 @@ $(document).ready(function () {
         } else {
           $prevBtn.removeClass("disabled");
         }
-  
+
         // Gestion de l'état du bouton "Suivant"
         if (currentIndex === $sliders.length - 1) {
           $nextBtn.addClass("disabled");
         } else {
           $nextBtn.removeClass("disabled");
         }
-  
+
         // Mise à jour de l'indicateur "currentIndex/total"
         $indicator.text(currentIndex + 1 + "/" + total);
       }
-  
+
       $prevBtn.click(function () {
         if (currentIndex > 0) {
           currentIndex--;
           showSlider(currentIndex);
         }
       });
-  
+
       $nextBtn.click(function () {
         if (currentIndex < $sliders.length - 1) {
           currentIndex++;
@@ -261,7 +267,7 @@ $(document).ready(function () {
       });
     }
   );
-  
+
   // Sélection de tous les sliders 05
   $("#page_methodologie_resultats .mapSliderContainer.05 .map_slider").each(
     function () {
