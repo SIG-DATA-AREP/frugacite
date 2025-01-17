@@ -587,6 +587,42 @@ div#page_cons_methodo{
   img{
     max-width: 80%;
     margin: 2rem auto;
+    &.recenter{
+      display: block;
+      margin: 2rem auto;
+    }
+  }
+  .note{
+    padding: .5em;
+    background-color: rgba($coral, 0.4);
+    border-radius: .2em;
+    margin: 1em;
+  }
+  .card-header {
+    cursor: pointer;
+  }
+  
+  .btn-link {
+    text-decoration: none;
+    color: $black;
+    width: 100%;
+    text-align: left;
+    h5 {
+      margin: 0;
+      float: left;
+      width: 95%;
+    }
+    span {
+      width: 5%;
+      text-align: right;
+      transition: transform 0.3s ease;
+      &::after{
+        content: "+";
+      }
+      &.hide::after{
+        content: "-";
+      }
+    }
   }
 }
 //PAGE : RESSOURCES -----------------
