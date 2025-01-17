@@ -235,7 +235,8 @@ a.text-link{
     bottom: 0;
     left: 0;
     width: 95%;
-    height: 25%;
+    min-height: 15%;
+    height: fit-content;
     background-color: rgba(#e5e5e5, 0.95); /* Semi-transparent black */
     color: $black;
     display: none; /* Initially hidden */
@@ -248,10 +249,13 @@ a.text-link{
       text-align: left;
       line-height: 1.2em;
       cursor: default;
-      padding: 1em !important;
-      span{
+      padding: 1em;
+
+      span.info_credits{
+        display: inline-block;
         font-size: 0.8em; 
-        font-style: italic; 
+        font-style: italic;
+        margin-top: 0.5rem;
       }
     }
     
