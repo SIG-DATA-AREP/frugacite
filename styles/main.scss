@@ -194,12 +194,12 @@ a.text-link{
     right: 0;
     width: 2.5em;
     height: 2.5em;
-    background-color: $dark_blue; /* Coral color */
+    background-color: $grey; /* Coral color */
     pointer-events: auto !important;
     align-items: center;
     color: white;
     cursor: pointer;
-    border: 1px solid $dark_grey;
+    border: 1px solid $grey;
     border-radius: 50%;
     transition: background-color 0.5s ease;
     p{
@@ -227,7 +227,7 @@ a.text-link{
   }
   
   .map-right-button:hover {
-    background-color: $dark_green; /* Coral color */
+    background-color: $dark_grey; /* Coral color */
   }
   
   .map-bottom-div {
@@ -288,16 +288,16 @@ a.text-link{
     &.slider-nav{
       cursor: pointer;
       text-align: center;
-      background-color: $coral;
+      // background-color: $coral;
       z-index: 11;
       width: 1em;
       max-width: 1.5em;
-      color: $white;
+      color: $coral;
       font-size: 2rem;
       &.disabled{
-        background-color: $grey;
+        // background-color: $grey;
         cursor: default;
-        color: #000;
+        color: $grey;
       }
       &#prevBtn{
         border-radius: 1em 0 0 1em;

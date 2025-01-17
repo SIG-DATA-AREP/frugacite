@@ -132,12 +132,12 @@ a.text-link:hover {
   right: 0;
   width: 2.5em;
   height: 2.5em;
-  background-color: #1a515d; /* Coral color */
+  background-color: #9d9d9c; /* Coral color */
   pointer-events: auto !important;
   align-items: center;
   color: white;
   cursor: pointer;
-  border: 1px solid #212121;
+  border: 1px solid #9d9d9c;
   border-radius: 50%;
   transition: background-color 0.5s ease;
 }
@@ -162,7 +162,7 @@ a.text-link:hover {
   transform: rotate(45deg);
 }
 .map_slider .map-right-button:hover {
-  background-color: #5a7c6e; /* Coral color */
+  background-color: #212121; /* Coral color */
 }
 .map_slider .map-bottom-div {
   position: absolute;
@@ -218,17 +218,15 @@ a.text-link:hover {
 .mapSliderContainer td.slider-nav {
   cursor: pointer;
   text-align: center;
-  background-color: #e15051;
   z-index: 11;
   width: 1em;
   max-width: 1.5em;
-  color: #ffffff;
+  color: #e15051;
   font-size: 2rem;
 }
 .mapSliderContainer td.slider-nav.disabled {
-  background-color: #9d9d9c;
   cursor: default;
-  color: #000;
+  color: #9d9d9c;
 }
 .mapSliderContainer td.slider-nav#prevBtn {
   border-radius: 1em 0 0 1em;
