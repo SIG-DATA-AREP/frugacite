@@ -1751,7 +1751,7 @@
   /******************************************************************************/
 
   (function () {
-    // Based on easing equations from Robert Penner (http://robertpenner.com/easing)
+    // Based on easing equations from Robert Penner (https://robertpenner.com/easing)
 
     var baseEasings = {};
 
