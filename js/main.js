@@ -1,4 +1,15 @@
 $(document).ready(function () {
+  //Humberguer button
+  $("button.navbar-toggler").on("click", function () {
+    $(".humberguer_button_container").toggleClass("change");
+
+    // Update the span button with the result
+    const status = $(".humberguer_button_container").hasClass("change")
+      ? "Menu Open"
+      : "Menu Closed";
+    $("#menu-status").text(status);
+  });
+
   // Function to parse the hash into page and parameters
   function parseHash(hash) {
     // Remove the leading '#'
