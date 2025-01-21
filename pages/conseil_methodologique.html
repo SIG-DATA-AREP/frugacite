@@ -18,7 +18,7 @@
       <p>
         La première étape de la démarche consiste à sélectionner les espèces concernées par le projet afin de modéliser leur 
         connectivité écologique. S’il est important de sélectionner les espèces en lien avec le périmètre projet dans une 
-        optique d’identification des impacts potentiels la recherche souligne l’intérêt de compléter celle-ci par une approche 
+        optique d’identification des impacts potentiels, la recherche souligne l’intérêt de compléter celle-ci par une approche 
         prospective. L'intégration d’espèces pouvant investir le site (espèces aperçues à proximité, sujettes aux migrations 
         dans un contexte de réchauffement climatique ou pouvant bénéficier de corridors éventuels futurs) permet de 
         visualiser les enjeux selon différents scénarios. Ces approches sont particulièrement importantes dans les contextes 
@@ -443,14 +443,14 @@
     </p>
     <ul>
       <li>
-        ProbabiliIé de connectiviIé (PC) :
+        Probabilité de connectivité (PC) :
         <ul>
           <li>
             <b>Calcul</b> : Indique la probabilité que deux individus situés au hasard dans la zone d’étude puissent entrer en 
             contact, soit en se trouvant dans la même tache d’habitat, soit grâce aux connexions entre les taches.
           </li>
           <li>
-            <b>InIerpréIation</b> : Une valeur de 0 signifie qu’il n’y a aucune connexion dans le réseau (paysage complètement 
+            <b>Interprétation</b> : Une valeur de 0 signifie qu’il n’y a aucune connexion dans le réseau (paysage complètement 
             fragmenté), tandis qu’une valeur de 1 signifie que l’ensemble du paysage est parfaitement connecté.
           </li>
           <li>
@@ -460,14 +460,14 @@
         </ul>
       </li>
       <li>
-        ConnectiviIé équivalenIe (EC):
+        Connectivité équivalenIe (EC):
         <ul>
           <li>
             <b>Calcul</b> : Mesure la quantité d’habitats effectivement accessibles dans le réseau par l’espèce considérée, en 
             prenant en compte à la fois les surfaces des tâches et les connexions entre elles.
           </li>
           <li>
-            <b>InIerpréIation</b> : Contrairement au PC, cette métrique fournit une unité liée à la capacité des taches d’habitat 
+            <b>Interprétation</b> : Contrairement au PC, cette métrique fournit une unité liée à la capacité des taches d’habitat 
             (par exemple, surface totale accessible).
           </li>
           <li>
@@ -484,14 +484,14 @@
     </p>
     <ul>
       <li>
-        Flux d’inIeraction (IF) :
+        Flux d’interaction (IF) :
         <ul>
           <li>
             <b>Calcul</b> : Évalue le potentiel d’interaction d’une tache d’habitat (nœud) avec toutes les autres taches du réseau. 
             Elle dépend de la capacité des taches (par défaut : la surface de la tâche) et de leur proximité.
           </li>
           <li>
-            <b>InIerpréIation</b> : Une tache avec une valeur IF élevée est fortement connectée aux taches voisines et a elle-même une forte capacité. Elle représente le « cœur du réseau »
+            <b>Interprétation</b> : Une tache avec une valeur IF élevée est fortement connectée aux taches voisines et a elle-même une forte capacité. Elle représente le « cœur du réseau »
           </li>
           <li>
             <b>Application</b> : Utile pour identifier les zones centrales du réseau à préserver dans le cadre de projets locaux ou 
@@ -500,14 +500,14 @@
         </ul>
       </li>
       <li>
-        Indice de cenIraliIé inIermédiaire (BC):
+        Indice de centralité intermédiaire (BC):
         <ul>
           <li>
             <b>Calcul</b> : Mesure la fréquence à laquelle une tache ou un lien est traversé par les chemins reliant les autres 
             taches d’habitat.
           </li>
           <li>
-            <b>InIerpréIation</b> : Une valeur BC élevée désigne un connecteur stratégique ou « passage obligé » du réseau, 
+            <b>Interprétation</b> : Une valeur BC élevée désigne un connecteur stratégique ou « passage obligé » du réseau, 
             même si la tache a une faible capacité (rôle de stepping-stone).
           </li>
           <li>
@@ -518,21 +518,21 @@
       </li>
     </ul>
     <p>
-      <b>MéIriques locales particulières – Les DelIa-méIriques</b> : évaluer la contribution à la connectivité globale
+      <b>Métriques locales particulières – Les Delta-métriques</b> : évaluer la contribution à la connectivité globale
       Les Delta-métriques permettent d’aller plus loin dans l’évaluation de la connectivité en mesurant la perte globale qui 
       serait engendrée par la suppression d’un élément du réseau. Elles sont particulièrement utiles pour hiérarchiser les 
       tâches et les corridors.
     </p>
     <ul>
       <li>
-        DelIa-PC (dPC):
+        Delta-PC (dPC):
         <ul>
           <li>
             <b>Calcul</b> : Indique la perte de connectivité globale (exprimée en pourcentage) si un élément (tâche ou lien) est 
             supprimé.
           </li>
           <li>
-            <b>InIerpréIation</b> :Plus la valeur de dPC est élevée, plus la tache joue un rôle important pour la connectivité 
+            <b>Interprétation</b> :Plus la valeur de dPC est élevée, plus la tache joue un rôle important pour la connectivité 
             globale.
           </li>
           <li>
@@ -542,25 +542,25 @@
         </ul>
       </li>
       <li>
-        DelIa-PC décomposé :
+        Delta-PC décomposé :
         <ul>
           <li>
             <b>Calcul</b> : Décompose la valeur de dPC en trois fractions pour préciser la nature de la contribution :
             <ul>
               <li>
-                <b>dPCarea</b> : Variation due à la capacité de la tache (sa taille ou qualité).
+                <b>dPC_area</b> : Variation due à la capacité de la tache (sa taille ou qualité).
               </li>
               <li>
-                <b>dPCflux</b> : Variation due à la perte des connexions entre la tâche et ses voisines.
+                <b>dPC_flux</b> : Variation due à la perte des connexions entre la tâche et ses voisines.
               </li>
               <li>
-                <b>dPCconnecIor</b> : Variation due au rôle de connecteur de la tache dans le réseau (importance comme 
+                <b>dPC_connecIor</b> : Variation due au rôle de connecteur de la tache dans le réseau (importance comme 
                 passage stratégique).
               </li>
             </ul>
           </li>
           <li>
-            <b>InIerpréIation</b> : Cette décomposition permet de comprendre pourquoi une tache est importante pour la 
+            <b>Interprétation</b> : Cette décomposition permet de comprendre pourquoi une tache est importante pour la 
             connectivité : est-ce par sa taille, par ses connexions ou par son rôle de liaison ?
           </li>
           <li>
@@ -571,7 +571,7 @@
       </li>
     </ul>
     <p>
-      <b>Choisir la bonne méIrique selon le projeH</b>
+      <b>Choisir la bonne métrique selon le projet</b>
       <ul>
         <li>
           Pour évaluer l’impact global d’un aménagement à grande échelle : privilégier les métriques globales (PC, EC).
@@ -621,8 +621,7 @@
           pour améliorer la connectivité dans le cadre du projet.
         </li>
         </li>
-          Intégrer ces zones à la programmation urbaine et architecturale comme à sacraliser à aménager pour maximiser la 
-          biodiversité avec les objectifs « préserver, restaurer, améliorer ».
+          Identifier la nécessité de sanctuariser ces zones lors de la programmation urbaine et architecturale.
         </li>
       </ul>
     </p>
@@ -676,9 +675,8 @@
             </li>
             <li>
               La recherche souligne l’importance d’inclure les acteurs locaux dans les processus de modélisation. Cela est 
-              essentiel pour adapter les résultats aux réalités locales. Ces ateliers permettent d’enrichir la méthodologie 
-              grâce aux retours des parties prenantes, comme cela a été fait lors de l’atelier participatif sur le choix des 
-              espèces dans le cadre du projet de recherche Frugacité.
+              essentiel pour adapter les résultats aux réalités locales. Ces ateliers permettent de questionner et d’enrichir la méthodologie 
+              grâce aux retours des parties prenantes.
             </li>
             <li>
               Pour les opérationnels, organiser de tels ateliers peut s’avérer utile pour ajuster les projets en fonction des 
