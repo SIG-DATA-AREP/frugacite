@@ -78,7 +78,7 @@ html {
 body {
   font-family: $arep-font-family;
   font-size: $text-font-size; // Makes 1rem
-  margin: 0 9em !important;
+  margin: 0 9em;
   padding: 0 0;
   box-sizing: border-box;
 }
@@ -779,8 +779,11 @@ footer {
 }
 
 @media (max-width: 990px) {
+  .logo{
+    height: $logo_height - 1.1rem !important;
+  }
     nav {
-      margin-top: calc($mobile-nav-marginTop + 0.5rem);
+      margin-top: calc($mobile-nav-marginTop + 2rem);
         div.container, li {
             border: none !important;
         }
@@ -793,6 +796,43 @@ footer {
         
     }
     .empty-partner{
+      display: none;
+    }
+  }
+
+  @media (max-width: 430px) {
+    body {
+      margin: 1rem !important;
+      box-sizing: border-box;
+    }
+
+    .logo{
+      &.logo_header_frugacite{
+        height: calc($logo_height - 1.1rem);
+      }
+    }
+
+    nav {
+      margin-top: calc($mobile-nav-marginTop + 2rem);
+  
+      div.container, li {
+        border: none !important;
+      }
+  
+      ul.dropdown-menu {
+        margin-left: 2rem;
+  
+        &.show {
+          margin-top: $mobile-dropdownMmenu-marginTop !important;
+        }
+      }
+    }
+
+    #main-content{
+      width: 100%;
+    }
+  
+    .empty-partner {
       display: none;
     }
   }
