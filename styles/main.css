@@ -244,7 +244,7 @@ a.text-link:hover {
   width: 1em;
   max-width: 1.5em;
   color: #e15051;
-  font-size: 2rem;
+  font-size: 5rem;
 }
 .mapSliderContainer td.slider-nav.disabled {
   cursor: default;
