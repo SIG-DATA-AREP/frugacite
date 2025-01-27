@@ -410,7 +410,10 @@ div#page_accueil{
 div#page_equipe{
   $equipe_logo_height : $logo_partener_height + 3rem;
   ul>li>ul>li{
-    list-style-type: square;
+    list-style-type: circle;
+    ul>li{
+      list-style-type:square;
+    }
   }
   .partner{
     height: $equipe_logo_height;
@@ -517,6 +520,16 @@ div#page_these{
 
 //PAGE : methodo -----------------
 div#page_methodologie_resultats{
+  li{
+    margin-top: 0.5em;
+  }
+  ul>li>ul>li{
+    list-style-type: circle;
+    ul>li{
+      list-style-type:square;
+    }
+  }
+  
   img{
     max-width: 80%;
     margin: 0 auto;
@@ -595,15 +608,6 @@ div#page_integrer{
   li{
     margin-top: 1em;
   }
-  ol>li>ul>li{
-    list-style-type: disc;
-  }
-  ul>li>ul>li{
-    list-style-type: circle;
-    ul>li{
-      list-style-type: square;
-    }
-  }
   
   div.note{
     padding: .5em;
@@ -661,9 +665,9 @@ div#page_levier_phase_travail{
     margin-top: 0.5em;
   }
   ul>li>ul>li{
-    list-style-type: square;
+    list-style-type: circle;
     ul>li{
-      list-style-type:circle;
+      list-style-type:square;
     }
   }
 }
@@ -671,7 +675,10 @@ div#page_levier_phase_travail{
 //PAGE : RESSOURCES -----------------
 div#page_ressources{
   ul>li>ul>li{
-    list-style-type: square;
+    list-style-type: circle;
+    ul>li{
+      list-style-type:square;
+    }
   }
   .card-header {
     cursor: pointer;

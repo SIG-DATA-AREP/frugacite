@@ -316,6 +316,9 @@ div#page_accueil .bg_redFont {
 }
 
 div#page_equipe ul > li > ul > li {
+  list-style-type: circle;
+}
+div#page_equipe ul > li > ul > li ul > li {
   list-style-type: square;
 }
 div#page_equipe .partner {
@@ -403,6 +406,15 @@ div#page_equipe .team-grid .card:hover .card-overlay {
   transform: translateY(0);
 }
 
+div#page_methodologie_resultats li {
+  margin-top: 0.5em;
+}
+div#page_methodologie_resultats ul > li > ul > li {
+  list-style-type: circle;
+}
+div#page_methodologie_resultats ul > li > ul > li ul > li {
+  list-style-type: square;
+}
 div#page_methodologie_resultats img {
   max-width: 80%;
   margin: 0 auto;
@@ -472,15 +484,6 @@ div#page_integrer img {
 div#page_integrer li {
   margin-top: 1em;
 }
-div#page_integrer ol > li > ul > li {
-  list-style-type: disc;
-}
-div#page_integrer ul > li > ul > li {
-  list-style-type: circle;
-}
-div#page_integrer ul > li > ul > li ul > li {
-  list-style-type: square;
-}
 div#page_integrer div.note {
   padding: 0.5em;
   background-color: rgba(225, 80, 81, 0.4);
@@ -532,13 +535,16 @@ div#page_levier_phase_travail li {
   margin-top: 0.5em;
 }
 div#page_levier_phase_travail ul > li > ul > li {
-  list-style-type: square;
+  list-style-type: circle;
 }
 div#page_levier_phase_travail ul > li > ul > li ul > li {
-  list-style-type: circle;
+  list-style-type: square;
 }
 
 div#page_ressources ul > li > ul > li {
+  list-style-type: circle;
+}
+div#page_ressources ul > li > ul > li ul > li {
   list-style-type: square;
 }
 div#page_ressources .card-header {
