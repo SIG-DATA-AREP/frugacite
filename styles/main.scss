@@ -457,8 +457,9 @@ div#page_equipe{
           width: 100%;
           height: auto;
           &.resizing{
-            width: auto !important;
-            height: 100% !important;
+            width: auto ;
+            height: 100%;
+            object-fit: cover;
           }
           &.default{
             width: 100%;
@@ -818,6 +819,12 @@ footer {
     .empty-partner{
       display: none;
     }
+    #page_equipe{
+      img.resizing{
+          width: 100% !important;
+          object-fit: cover;
+        }
+    }
   }
 
   @media (max-width: 430px) {
@@ -854,5 +861,12 @@ footer {
   
     .empty-partner {
       display: none;
+    }
+
+    #page_equipe{
+      img.resizing{
+          width: 100% !important;
+          object-fit: cover;
+        }
     }
   }

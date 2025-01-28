@@ -95,7 +95,7 @@ h2, h3 {
 }
 
 .accueil-color_green {
-  color: #0889a6;
+  color: #e15051;
 }
 
 a.text-link {
@@ -103,7 +103,7 @@ a.text-link {
   cursor: pointer;
 }
 a.text-link.title-green {
-  color: #0889a6;
+  color: #e15051;
 }
 a.text-link:hover {
   font-weight: bold;
@@ -361,8 +361,10 @@ div#page_equipe .team-grid .card .card-image img {
   height: auto;
 }
 div#page_equipe .team-grid .card .card-image img.resizing {
-  width: auto !important;
-  height: 100% !important;
+  width: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 div#page_equipe .team-grid .card .card-image img.default {
   width: 100%;
@@ -668,6 +670,11 @@ footer section .image-container {
   .empty-partner {
     display: none;
   }
+  #page_equipe img.resizing {
+    width: 100% !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 @media (max-width: 430px) {
   body {
@@ -694,5 +701,10 @@ footer section .image-container {
   }
   .empty-partner {
     display: none;
+  }
+  #page_equipe img.resizing {
+    width: 100% !important;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
