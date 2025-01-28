@@ -542,6 +542,16 @@ div#page_levier_phase_travail ul > li > ul > li {
 div#page_levier_phase_travail ul > li > ul > li ul > li {
   list-style-type: square;
 }
+div#page_levier_phase_travail .levier_action {
+  margin-left: 2em;
+}
+div#page_levier_phase_travail .bg_redFont {
+  background-color: rgba(225, 80, 81, 0.2);
+  padding: 0.3rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 0.3rem;
+}
 
 div#page_ressources ul > li > ul > li {
   list-style-type: circle;
