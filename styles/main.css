@@ -282,6 +282,36 @@ a.text-link:hover {
   color: #9d9d9c;
 }
 
+.info-slider {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  background-color: rgba(225, 80, 81, 0.1);
+  color: #212121;
+  font-style: italic;
+  font-size: 0.8em;
+}
+.info-slider .info_icon {
+  display: inline-block;
+  font-size: 2em;
+  margin-right: 0.2em;
+  color: #D31216;
+}
+.info-slider .close-btn {
+  position: absolute;
+  top: 0;
+  right: 0.2em;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #88212c;
+}
+.info-slider .close-btn:hover {
+  color: #212121;
+}
+
 div#page_accueil img {
   max-width: 100%;
   margin: 2rem;

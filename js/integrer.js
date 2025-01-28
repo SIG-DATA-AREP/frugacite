@@ -90,4 +90,5 @@ $(document).ready(function () {
       }
     });
   });
+  add_info_slider();
 });

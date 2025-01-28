@@ -367,6 +367,38 @@ a.text-link{
   }
 }
 
+//INFO SLIDER
+.info-slider{
+  // border: $coral 1px dashed;
+  position: relative;
+  width: fit-content;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  margin: 1em 0;
+  background-color: rgba($coral, 0.1);
+  color: $dark_grey;
+  font-style: italic;
+  font-size: 0.8em;
+  .info_icon{
+    display: inline-block;
+    font-size: 2em;
+    margin-right: 0.2em;
+    color: $brigth_red;
+  }
+  .close-btn{
+    position: absolute;
+    top: 0;
+    right: 0.2em;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: $dark_red;
+    &:hover{
+      color: $dark_grey;
+    }
+  }
+
+}
+
 //PAGE : ACCUEIL -----------------
 div#page_accueil{
   img{
